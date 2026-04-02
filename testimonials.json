@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Yohan M.",
+        "role": "Porteur de projet",
+        "rating": 5,
+        "text": "L'équipe a vraiment clarifié les étapes et priorités de mon projet. Je sais exactement où aller, quoi faire, dans quel ordre.",
+        "source": "Google",
+        "date": "2024-11",
+        "placeholder": true,
+        "_comment": "À remplacer par les vrais avis Google — copier le texte exact, le nom affiché, et la date de publication."
+    },
+    {
+        "name": "Val G.",
+        "role": "Porteur de projet",
+        "rating": 5,
+        "text": "L'expert a su me trouver un terrain alors que j'étais bloqué sur cette partie depuis plusieurs mois.",
+        "source": "Google",
+        "date": "2024-09",
+        "placeholder": true,
+        "_comment": "À remplacer par les vrais avis Google."
+    },
+    {
+        "name": "Kylian M.",
+        "role": "Porteur de projet",
+        "rating": 5,
+        "text": "Un grand merci pour l'accompagnement. N'ayant pas beaucoup de temps libre, ça me permet d'avancer en toute sérénité.",
+        "source": "Google",
+        "date": "2024-08",
+        "placeholder": true,
+        "_comment": "À remplacer par les vrais avis Google."
+    }
+]

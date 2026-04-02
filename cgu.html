@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions Générales d'Utilisation — PadelProgram</title>
+    <meta name="description" content="Conditions générales d'utilisation du site PadelProgram.fr — ProPadelKit SAS">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0A2A2F">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --deep: #0A2A2F; --deep-light: #133D42; --deep-dark: #061E22;
+            --cream: #F5F2EB; --cream-light: #F9F7F2; --blanc: #FFFFFF; --noir: #030A0B;
+            --lime: #C4DF07; --grey-100: #E8E6DF; --grey-400: #8A8A85; --grey-600: #5C5C56;
+            --text-on-dark: rgba(255,255,255,0.88); --text-dim: rgba(255,255,255,0.50);
+            --text-primary: #1A1A18; --text-secondary: #5C5C56;
+            --ff-body: 'Space Grotesk', sans-serif; --ff-display: 'Newsreader', serif;
+            --radius-md: 6px; --radius-lg: 12px;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--ff-body); background: var(--noir); color: var(--blanc); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+        img { max-width: 100%; display: block; } a { text-decoration: none; color: inherit; }
+        ::selection { background: var(--lime); color: var(--deep); }
+        body::after { content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9999; opacity: 0.018; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
+        .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(6,30,34,0.92); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.06); }
+        .nav-in { max-width: 1200px; margin: 0 auto; padding: 0 48px; display: flex; align-items: center; justify-content: space-between; height: 80px; }
+        .logo { display: inline-flex; align-items: center; } .logo img { height: 120px; width: auto; }
+        .btn-nav { font-size: 14px; font-weight: 600; color: var(--deep); background: var(--lime); padding: 10px 24px; border-radius: var(--radius-md); transition: transform 0.2s, box-shadow 0.2s; }
+        .btn-nav:hover { transform: translateY(-1px); box-shadow: 0 2px 12px rgba(196,223,7,0.25); }
+
+        .legal-hero { padding: 160px 28px 48px; background: linear-gradient(175deg, #0d3338 0%, #0a2a2f 50%, #061e22 100%); text-align: center; }
+        .legal-hero h1 { font-family: var(--ff-display); font-weight: 400; font-size: clamp(32px,4vw,48px); line-height: 1.15; color: var(--blanc); letter-spacing: -0.02em; }
+        .legal-hero p { font-size: 15px; color: var(--text-dim); margin-top: 12px; }
+
+        .legal-content { padding: clamp(48px,6vw,72px) 28px; background: linear-gradient(180deg, var(--cream-light) 0%, var(--cream) 100%); }
+        .legal-wrap { max-width: 760px; margin: 0 auto; }
+        .legal-wrap h2 { font-family: var(--ff-display); font-weight: 500; font-size: 24px; color: var(--deep); margin-top: 48px; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--grey-100); }
+        .legal-wrap h2:first-child { margin-top: 0; }
+        .legal-wrap h3 { font-size: 16px; font-weight: 600; color: var(--deep); margin-top: 28px; margin-bottom: 8px; }
+        .legal-wrap p, .legal-wrap li { font-size: 15px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 12px; }
+        .legal-wrap ul { list-style: none; padding-left: 0; }
+        .legal-wrap ul li { padding-left: 20px; position: relative; }
+        .legal-wrap ul li::before { content: ''; position: absolute; left: 0; top: 10px; width: 6px; height: 6px; border-radius: 50%; background: var(--lime); }
+        .legal-wrap strong { color: var(--deep); }
+
+        .footer { padding: 40px 28px; background: var(--deep-dark); border-top: 1px solid rgba(255,255,255,0.06); }
+        .footer-in { max-width: 1080px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+        .footer-l p { font-size: 13px; color: var(--text-dim); line-height: 1.6; }
+        .footer-logo img { height: 80px; margin-bottom: 8px; }
+        .footer-r { display: flex; gap: 24px; flex-wrap: wrap; }
+        .footer-r a { font-size: 13px; color: var(--text-dim); transition: color 0.2s; } .footer-r a:hover { color: var(--blanc); }
+
+        @media (max-width: 768px) {
+            .nav-in { padding: 0 20px; height: 64px; } .logo img { height: 80px; }
+            .legal-hero { padding: 120px 20px 36px; }
+            .footer-in { flex-direction: column; text-align: center; } .footer-r { justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="nav">
+        <div class="nav-in">
+            <a href="/" class="logo"><img src="logo.png" alt="PadelProgram"></a>
+            <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener" class="btn-nav">Réserver un appel</a>
+        </div>
+    </nav>
+
+    <section class="legal-hero">
+        <h1>Conditions Générales d'Utilisation</h1>
+        <p>Conditions d'accès et d'utilisation du site padelprogram.fr</p>
+    </section>
+
+    <section class="legal-content">
+        <div class="legal-wrap">
+
+            <h2>1. Objet</h2>
+            <p>Les présentes Conditions Générales d'Utilisation (CGU) définissent les modalités d'accès et d'utilisation du site internet <strong>padelprogram.fr</strong>, édité par ProPadelKit SAS.</p>
+            <p>L'accès au site implique l'acceptation pleine et entière des présentes CGU. Si vous n'acceptez pas ces conditions, vous êtes invité à ne pas utiliser le site.</p>
+
+            <h2>2. Accès au site</h2>
+            <p>Le site padelprogram.fr est accessible gratuitement depuis tout appareil disposant d'un accès à Internet. Les frais d'accès à Internet et les équipements nécessaires à la consultation du site sont à la charge de l'utilisateur.</p>
+            <p>ProPadelKit SAS met en oeuvre les moyens raisonnables pour assurer la disponibilité du site. Toutefois, l'accès peut être interrompu à tout moment, sans préavis, notamment pour des raisons de maintenance, de mise à jour ou en cas de force majeure.</p>
+
+            <h2>3. Services proposés</h2>
+            <p>Le site padelprogram.fr a pour objet de :</p>
+            <ul>
+                <li>Présenter les prestations d'accompagnement proposées par PadelProgram</li>
+                <li>Permettre aux porteurs de projets de prendre rendez-vous via un formulaire dédié (Typeform)</li>
+                <li>Fournir des ressources informatives sur la structuration de projets de clubs de padel</li>
+            </ul>
+            <p>Les informations publiées sur le site sont fournies à titre indicatif et ne constituent en aucun cas un conseil juridique, financier ou comptable.</p>
+
+            <h2>4. Inscription et formulaire</h2>
+            <p>L'accès à certaines fonctionnalités du site (prise de rendez-vous, formulaire de candidature) peut nécessiter la communication de données personnelles. L'utilisateur s'engage à fournir des informations exactes et à jour.</p>
+            <p>La soumission d'un formulaire ne constitue pas un engagement contractuel de la part de ProPadelKit SAS et ne garantit pas l'accès aux prestations d'accompagnement.</p>
+
+            <h2>5. Propriété intellectuelle</h2>
+            <p>L'ensemble des éléments constituant le site padelprogram.fr (structure, design, textes, images, logos, vidéos, graphismes, logiciels) est la propriété exclusive de ProPadelKit SAS et est protégé par les lois françaises et internationales relatives à la propriété intellectuelle.</p>
+            <p>Toute reproduction, représentation, diffusion ou redistribution, totale ou partielle, du contenu du site est strictement interdite sans autorisation écrite préalable de ProPadelKit SAS.</p>
+
+            <h2>6. Responsabilité de l'utilisateur</h2>
+            <p>L'utilisateur s'engage à utiliser le site de manière conforme à sa destination et aux présentes CGU. Il s'interdit notamment de :</p>
+            <ul>
+                <li>Tenter d'accéder de manière non autorisée aux systèmes informatiques de ProPadelKit SAS</li>
+                <li>Utiliser le site à des fins illicites ou contraires à l'ordre public</li>
+                <li>Transmettre des contenus diffamatoires, injurieux ou portant atteinte aux droits de tiers</li>
+                <li>Utiliser des dispositifs automatisés pour collecter des données sur le site</li>
+            </ul>
+
+            <h2>7. Limitation de responsabilité</h2>
+            <p>ProPadelKit SAS ne saurait être tenu responsable :</p>
+            <ul>
+                <li>Des interruptions temporaires du site pour des raisons techniques ou de maintenance</li>
+                <li>Des dommages directs ou indirects résultant de l'utilisation du site</li>
+                <li>Du contenu des sites tiers accessibles via des liens hypertextes présents sur le site</li>
+                <li>Des décisions prises par l'utilisateur sur la base des informations publiées sur le site</li>
+            </ul>
+
+            <h2>8. Liens hypertextes</h2>
+            <p>Le site padelprogram.fr peut contenir des liens vers des sites tiers (Typeform, réseaux sociaux, etc.). ProPadelKit SAS n'exerce aucun contrôle sur ces sites et décline toute responsabilité quant à leur contenu, leurs pratiques ou leur disponibilité.</p>
+
+            <h2>9. Données personnelles et cookies</h2>
+            <p>L'utilisation du site est soumise à la politique de protection des données personnelles décrite dans les <a href="mentions-legales.html" style="color: var(--deep); text-decoration: underline;">mentions légales</a>.</p>
+            <p>Le site peut utiliser des cookies pour améliorer l'expérience de navigation. L'utilisateur peut paramétrer son navigateur pour refuser les cookies, ce qui peut limiter l'accès à certaines fonctionnalités.</p>
+
+            <h2>10. Modification des CGU</h2>
+            <p>ProPadelKit SAS se réserve le droit de modifier les présentes CGU à tout moment. Les modifications prennent effet dès leur publication sur le site. L'utilisateur est invité à consulter régulièrement les CGU pour prendre connaissance des éventuelles modifications.</p>
+            <p>La poursuite de l'utilisation du site après modification des CGU vaut acceptation des nouvelles conditions.</p>
+
+            <h2>11. Droit applicable et juridiction</h2>
+            <p>Les présentes CGU sont soumises au droit français. En cas de litige relatif à l'interprétation ou à l'exécution des présentes, les parties s'efforceront de trouver une solution amiable. À défaut, le litige sera porté devant les tribunaux compétents du ressort du siège social de ProPadelKit SAS.</p>
+
+            <h2>12. Contact</h2>
+            <p>Pour toute question relative aux présentes CGU ou à l'utilisation du site, vous pouvez nous contacter à l'adresse suivante : <strong>contact@padelprogram.fr</strong>.</p>
+
+            <p style="margin-top: 48px; font-size: 13px; color: var(--grey-400);">Dernière mise à jour : mars 2026</p>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-in">
+            <div class="footer-l">
+                <a href="/" class="footer-logo"><img src="logo.png" alt="PadelProgram" loading="lazy"></a>
+                <p>PadelProgram · Structuration de projets de clubs de padel.</p>
+                <p>&copy; 2026 ProPadelKit SAS · Tous droits réservés.</p>
+            </div>
+            <div class="footer-r">
+                <a href="mentions-legales.html">Mentions légales</a>
+                <a href="cgv.html">CGV</a>
+                <a href="cgu.html">CGU</a>
+                <a href="guide-ouvrir-club-padel.html">Guide padel</a>
+                <a href="mailto:contact@padelprogram.fr">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
