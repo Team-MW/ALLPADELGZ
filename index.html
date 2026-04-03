@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <!--
     ╔═══════════════════════════════════════════════════════════════╗
@@ -44,12 +45,14 @@
 
     <!-- ═══ SEO — Title & Description ═══ -->
     <title>PadelProgram — Incubateur de clubs de padel | Étude de zone, business plan & financement</title>
-    <meta name="description" content="PadelProgram accompagne les porteurs de projets de clubs de padel : étude de zone, business plan structuré, dossier de financement défendable. +50 dossiers analysés en France. Sélection sur profil.">
+    <meta name="description"
+        content="PadelProgram accompagne les porteurs de projets de clubs de padel : étude de zone, business plan structuré, dossier de financement défendable. +50 dossiers analysés en France. Sélection sur profil.">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://padelprogram.fr/">
 
     <!-- ═══ SEO — Mots-clés secondaires (contenu sémantique) ═══ -->
-    <meta name="keywords" content="ouvrir club padel, créer club padel, projet padel, business plan padel, étude de marché padel, financement club padel, incubateur padel, accompagnement padel, centre de padel, terrain de padel, ouverture club padel France">
+    <meta name="keywords"
+        content="ouvrir club padel, créer club padel, projet padel, business plan padel, étude de marché padel, financement club padel, incubateur padel, accompagnement padel, centre de padel, terrain de padel, ouverture club padel France">
     <meta name="author" content="PadelProgram — ProPadelKit SAS">
     <meta name="geo.region" content="FR">
     <meta name="geo.placename" content="France">
@@ -59,7 +62,8 @@
     <!-- ═══ Open Graph (Facebook, LinkedIn, WhatsApp) ═══ -->
     <meta property="og:site_name" content="PadelProgram">
     <meta property="og:title" content="PadelProgram — L'incubateur pour ouvrir votre club de padel">
-    <meta property="og:description" content="Étude de zone, business plan, dossier de financement : chaque étape structurée pour ouvrir votre club de padel. +50 dossiers analysés en France.">
+    <meta property="og:description"
+        content="Étude de zone, business plan, dossier de financement : chaque étape structurée pour ouvrir votre club de padel. +50 dossiers analysés en France.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://padelprogram.fr/">
     <meta property="og:image" content="https://padelprogram.fr/og-image.jpg">
@@ -71,7 +75,8 @@
     <!-- ═══ Twitter Card ═══ -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="PadelProgram — L'incubateur pour ouvrir votre club de padel">
-    <meta name="twitter:description" content="Étude de zone, business plan, dossier de financement. Chaque étape structurée pour aboutir. +50 dossiers analysés.">
+    <meta name="twitter:description"
+        content="Étude de zone, business plan, dossier de financement. Chaque étape structurée pour aboutir. +50 dossiers analysés.">
     <meta name="twitter:image" content="https://padelprogram.fr/og-image.jpg">
     <meta name="twitter:image:alt" content="PadelProgram — Incubateur de clubs de padel">
 
@@ -82,12 +87,20 @@
     <meta name="theme-color" content="#0A2A2F">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&display=swap"
+        rel="stylesheet">
     <style>
         /* ═══════════════════════════════════════════════
            1. RESET & DESIGN TOKENS
            ═══════════════════════════════════════════════ */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         :root {
             --deep: #0A2A2F;
@@ -121,7 +134,10 @@
             --shadow-lg: 0 12px 48px rgba(0, 0, 0, 0.12);
         }
 
-        html { scroll-behavior: smooth; }
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: var(--ff-body);
             background: var(--noir);
@@ -129,16 +145,33 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
-        img { max-width: 100%; display: block; }
-        a { text-decoration: none; color: inherit; }
-        ::selection { background: var(--lime); color: var(--deep); }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ::selection {
+            background: var(--lime);
+            color: var(--deep);
+        }
 
         /* Grain texture */
         body::after {
             content: '';
-            position: fixed; inset: 0;
-            pointer-events: none; z-index: 9999;
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 9999;
             opacity: 0.018;
             background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
         }
@@ -147,100 +180,267 @@
            2. ACCESSIBILITÉ
            ═══════════════════════════════════════════════ */
         .skip-link {
-            position: absolute; top: -100%; left: 16px; z-index: 200;
-            background: var(--blanc); color: var(--deep);
-            padding: 12px 24px; border-radius: var(--radius-md);
-            font-weight: 600; font-size: 14px;
+            position: absolute;
+            top: -100%;
+            left: 16px;
+            z-index: 200;
+            background: var(--blanc);
+            color: var(--deep);
+            padding: 12px 24px;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 14px;
         }
-        .skip-link:focus { top: 16px; }
-        *:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+
+        .skip-link:focus {
+            top: 16px;
+        }
+
+        *:focus-visible {
+            outline: 2px solid currentColor;
+            outline-offset: 3px;
+        }
+
         @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto; }
-            *, *::before, *::after { transition-duration: 0s !important; animation-duration: 0s !important; }
-            .r { opacity: 1 !important; transform: none !important; }
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0s !important;
+                animation-duration: 0s !important;
+            }
+
+            .r {
+                opacity: 1 !important;
+                transform: none !important;
+            }
         }
 
         /* ═══════════════════════════════════════════════
            3. UTILITAIRES & REVEAL
            ═══════════════════════════════════════════════ */
-        .wrap { max-width: var(--max-w); margin: 0 auto; padding: 0 28px; }
-        .text-cap { max-width: 680px; }
-        .text-center { text-align: center; }
-        .mx-auto { margin-left: auto; margin-right: auto; }
-        .r { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
-        .r.v { opacity: 1; transform: none; }
-        .d1 { transition-delay: 0.1s; }
-        .d2 { transition-delay: 0.2s; }
-        .d3 { transition-delay: 0.3s; }
+        .wrap {
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        .text-cap {
+            max-width: 680px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .r {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .r.v {
+            opacity: 1;
+            transform: none;
+        }
+
+        .d1 {
+            transition-delay: 0.1s;
+        }
+
+        .d2 {
+            transition-delay: 0.2s;
+        }
+
+        .d3 {
+            transition-delay: 0.3s;
+        }
 
         /* ═══════════════════════════════════════════════
            4. NAVIGATION
            ═══════════════════════════════════════════════ */
         .nav {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            padding: 0; overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            padding: 0;
+            overflow: hidden;
             transition: background 0.4s, backdrop-filter 0.4s, border-color 0.4s;
             border-bottom: 1px solid transparent;
         }
+
         .nav.stuck {
             background: rgba(6, 30, 34, 0.92);
-            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-bottom-color: rgba(255, 255, 255, 0.06);
         }
+
         .nav-in {
-            max-width: 1200px; margin: 0 auto; padding: 0 48px;
-            display: grid; grid-template-columns: 1fr auto 1fr;
-            align-items: center; height: 130px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 48px;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            height: 130px;
         }
-        .logo { display: inline-flex; align-items: center; justify-self: start; margin-top: -12px; }
-        .logo img { height: 200px; width: auto; display: block; }
-        .nav-mid { display: flex; gap: 32px; justify-self: center; }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            justify-self: start;
+            margin-top: -12px;
+        }
+
+        .logo img {
+            height: 200px;
+            width: auto;
+            display: block;
+        }
+
+        .nav-mid {
+            display: flex;
+            gap: 32px;
+            justify-self: center;
+        }
+
         .nav-mid a {
-            font-size: 14px; font-weight: 500; color: var(--text-dim);
-            letter-spacing: 0.3px; transition: color 0.2s;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-dim);
+            letter-spacing: 0.3px;
+            transition: color 0.2s;
             position: relative;
         }
+
         .nav-mid a::after {
-            content: ''; position: absolute; bottom: -4px; left: 50%; width: 0; height: 1.5px;
-            background: var(--lime); transition: width 0.3s ease, left 0.3s ease;
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 50%;
+            width: 0;
+            height: 1.5px;
+            background: var(--lime);
+            transition: width 0.3s ease, left 0.3s ease;
         }
-        .nav-mid a:hover { color: var(--blanc); }
-        .nav-mid a:hover::after { width: 100%; left: 0; }
+
+        .nav-mid a:hover {
+            color: var(--blanc);
+        }
+
+        .nav-mid a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
         .btn-nav {
             justify-self: end;
-            font-size: 14px; font-weight: 600; color: var(--deep);
-            background: var(--lime); padding: 10px 24px;
-            border-radius: var(--radius-md); border: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--deep);
+            background: var(--lime);
+            padding: 10px 24px;
+            border-radius: var(--radius-md);
+            border: none;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        .btn-nav:hover { transform: translateY(-1px); box-shadow: 0 2px 12px rgba(196,223,7,0.25); }
+
+        .btn-nav:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 2px 12px rgba(196, 223, 7, 0.25);
+        }
+
         .ham {
-            display: none; background: none; border: none; cursor: pointer;
-            width: 28px; height: 20px; position: relative;
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 28px;
+            height: 20px;
+            position: relative;
         }
+
         .ham span {
-            display: block; width: 100%; height: 2px; background: var(--blanc);
-            position: absolute; left: 0; transition: 0.3s;
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: var(--blanc);
+            position: absolute;
+            left: 0;
+            transition: 0.3s;
         }
-        .ham span:nth-child(1) { top: 0; }
-        .ham span:nth-child(2) { top: 9px; }
-        .ham span:nth-child(3) { top: 18px; }
-        .ham.on span:nth-child(1) { transform: rotate(45deg); top: 9px; }
-        .ham.on span:nth-child(2) { opacity: 0; }
-        .ham.on span:nth-child(3) { transform: rotate(-45deg); top: 9px; }
+
+        .ham span:nth-child(1) {
+            top: 0;
+        }
+
+        .ham span:nth-child(2) {
+            top: 9px;
+        }
+
+        .ham span:nth-child(3) {
+            top: 18px;
+        }
+
+        .ham.on span:nth-child(1) {
+            transform: rotate(45deg);
+            top: 9px;
+        }
+
+        .ham.on span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .ham.on span:nth-child(3) {
+            transform: rotate(-45deg);
+            top: 9px;
+        }
+
         .mob-menu {
-            display: none; position: fixed; top: 88px; left: 0; right: 0; bottom: 0;
-            background: rgba(6, 30, 34, 0.97); backdrop-filter: blur(20px);
-            padding: 40px 28px; z-index: 99;
+            display: none;
+            position: fixed;
+            top: 88px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(6, 30, 34, 0.97);
+            backdrop-filter: blur(20px);
+            padding: 40px 28px;
+            z-index: 99;
         }
-        .mob-menu.open { display: flex; flex-direction: column; }
+
+        .mob-menu.open {
+            display: flex;
+            flex-direction: column;
+        }
+
         .mob-menu a {
-            display: block; padding: 22px 0; font-size: 18px; font-weight: 500;
-            color: var(--blanc); border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            display: block;
+            padding: 22px 0;
+            font-size: 18px;
+            font-weight: 500;
+            color: var(--blanc);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
         }
+
         .mob-menu .btn-nav {
-            display: block; text-align: center; margin-top: 32px;
-            padding: 16px; border-radius: var(--radius-lg); font-size: 15px;
+            display: block;
+            text-align: center;
+            margin-top: 32px;
+            padding: 16px;
+            border-radius: var(--radius-lg);
+            font-size: 15px;
         }
 
         /* ═══════════════════════════════════════════════
@@ -258,57 +458,119 @@
                 linear-gradient(175deg, #0d3338 0%, #0a2a2f 50%, #061e22 100%);
             overflow: hidden;
         }
-        .hero-in { max-width: 860px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+
+        .hero-in {
+            max-width: 860px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
         .hero-badge {
-            display: inline-flex; align-items: center; gap: 8px;
-            font-size: 11px; font-weight: 600; color: var(--lime);
-            text-transform: uppercase; letter-spacing: 2.5px;
-            margin-top: 24px; margin-bottom: 32px; padding: 6px 16px;
-            border: 1px solid rgba(196,223,7,0.25);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--lime);
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            margin-top: 24px;
+            margin-bottom: 32px;
+            padding: 6px 16px;
+            border: 1px solid rgba(196, 223, 7, 0.25);
             border-radius: var(--radius-md);
             background: transparent;
         }
+
         .hero h1 {
-            font-family: var(--ff-display); font-weight: 400;
+            font-family: var(--ff-display);
+            font-weight: 400;
             font-size: clamp(34px, 5.2vw, 56px);
-            line-height: 1.12; color: var(--blanc);
-            letter-spacing: -0.025em; margin-bottom: 0;
+            line-height: 1.12;
+            color: var(--blanc);
+            letter-spacing: -0.025em;
+            margin-bottom: 0;
         }
-        .hero h1 em { font-style: italic; color: rgba(255,255,255,0.72); }
+
+        .hero h1 em {
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.72);
+        }
 
         /* Micro-preuves d'autorité */
         .hero-proofs {
-            display: flex; justify-content: center; gap: 40px; flex-wrap: nowrap;
-            margin-top: 40px; padding-top: 28px;
-            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: nowrap;
+            margin-top: 40px;
+            padding-top: 28px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
         }
+
         .hero-proof {
-            display: flex; align-items: center; gap: 10px;
-            font-size: 14px; color: rgba(255,255,255,0.70);
-            font-weight: 500; letter-spacing: 0.2px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.70);
+            font-weight: 500;
+            letter-spacing: 0.2px;
             white-space: nowrap;
         }
+
         .hero-proof::before {
-            content: ''; width: 8px; height: 8px; border-radius: 50%;
-            background: var(--lime); opacity: 1; flex-shrink: 0;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--lime);
+            opacity: 1;
+            flex-shrink: 0;
         }
 
         .hero-sub {
-            font-size: clamp(17px, 1.8vw, 21px); color: rgba(255,255,255,0.55);
-            line-height: 1.70; max-width: 540px; margin: 36px auto 40px;
+            font-size: clamp(17px, 1.8vw, 21px);
+            color: rgba(255, 255, 255, 0.55);
+            line-height: 1.70;
+            max-width: 540px;
+            margin: 36px auto 40px;
             font-weight: 400;
         }
+
         .btn-primary {
-            display: inline-flex; align-items: center; gap: 10px;
-            background: var(--lime); color: var(--deep);
-            font-weight: 600; font-size: 16px;
-            padding: 16px 36px; border-radius: var(--radius-md);
-            border: none; cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--lime);
+            color: var(--deep);
+            font-weight: 600;
+            font-size: 16px;
+            padding: 16px 36px;
+            border-radius: var(--radius-md);
+            border: none;
+            cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
         }
-        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(196,223,7,0.25); background: #d4ef17; }
-        .btn-primary svg { width: 15px; height: 15px; }
-        .hero-micro { margin-top: 14px; font-size: 13px; color: var(--text-dim); }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 24px rgba(196, 223, 7, 0.25);
+            background: #d4ef17;
+        }
+
+        .btn-primary svg {
+            width: 15px;
+            height: 15px;
+        }
+
+        .hero-micro {
+            margin-top: 14px;
+            font-size: 13px;
+            color: var(--text-dim);
+        }
 
         /* ═══════════════════════════════════════════════
            6. AVIS GOOGLE — dégradé sombre
@@ -317,110 +579,273 @@
             padding: 48px 28px 56px;
             background: linear-gradient(180deg, #081a1e 0%, #0a2025 30%, #0d2a30 100%);
         }
+
         /* Layout horizontal : résumé à gauche, cards à droite */
         .avis-layout {
-            display: grid; grid-template-columns: 200px 1fr;
-            gap: 32px; align-items: start;
-            max-width: var(--max-w); margin: 0 auto; padding: 0 28px;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 32px;
+            align-items: start;
+            max-width: var(--max-w);
+            margin: 0 auto;
+            padding: 0 28px;
         }
-        .avis-head { text-align: center; }
+
+        .avis-head {
+            text-align: center;
+        }
+
         .avis-google-badge {
-            display: inline-flex; align-items: center; gap: 8px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
             margin-bottom: 16px;
         }
-        .avis-google-badge svg { width: 24px; height: 24px; flex-shrink: 0; }
-        .avis-google-badge span { font-size: 12px; font-weight: 600; color: var(--text-dim); letter-spacing: 0.3px; }
-        .avis-summary {
-            display: flex; align-items: baseline; justify-content: center; gap: 8px;
+
+        .avis-google-badge svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
         }
-        .avis-big-score { font-size: 52px; font-weight: 300; color: var(--blanc); font-family: var(--ff-display); line-height: 1; }
-        .avis-summary-right { text-align: left; }
-        .avis-stars { color: var(--gold); font-size: 18px; letter-spacing: 2px; display: block; margin-bottom: 2px; }
-        .avis-count { font-size: 11px; color: var(--text-dim); font-weight: 400; }
+
+        .avis-google-badge span {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-dim);
+            letter-spacing: 0.3px;
+        }
+
+        .avis-summary {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .avis-big-score {
+            font-size: 52px;
+            font-weight: 300;
+            color: var(--blanc);
+            font-family: var(--ff-display);
+            line-height: 1;
+        }
+
+        .avis-summary-right {
+            text-align: left;
+        }
+
+        .avis-stars {
+            color: var(--gold);
+            font-size: 18px;
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .avis-count {
+            font-size: 11px;
+            color: var(--text-dim);
+            font-weight: 400;
+        }
 
         /* Cards avis — carrousel infini */
         .avis-track-wrap {
-            overflow: hidden; position: relative;
+            overflow: hidden;
+            position: relative;
         }
+
         .avis-track-wrap::before,
         .avis-track-wrap::after {
-            content: ''; position: absolute; top: 0; bottom: 0; width: 40px; z-index: 2; pointer-events: none;
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            z-index: 2;
+            pointer-events: none;
         }
-        .avis-track-wrap::before { left: 0; background: linear-gradient(90deg, #0d2a30 0%, transparent 100%); }
-        .avis-track-wrap::after { right: 0; background: linear-gradient(270deg, #0d2a30 0%, transparent 100%); }
+
+        .avis-track-wrap::before {
+            left: 0;
+            background: linear-gradient(90deg, #0d2a30 0%, transparent 100%);
+        }
+
+        .avis-track-wrap::after {
+            right: 0;
+            background: linear-gradient(270deg, #0d2a30 0%, transparent 100%);
+        }
+
         .avis-track {
-            display: flex; gap: 16px;
+            display: flex;
+            gap: 16px;
             animation: avis-scroll 30s linear infinite;
             width: max-content;
         }
-        .avis-track:hover { animation-play-state: paused; }
-        @keyframes avis-scroll {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
+
+        .avis-track:hover {
+            animation-play-state: paused;
         }
+
+        @keyframes avis-scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
         .avis-card {
             flex: 0 0 300px;
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.10);
-            border-radius: var(--radius-lg); padding: 24px 20px 20px;
+            border-radius: var(--radius-lg);
+            padding: 24px 20px 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
         }
+
         .avis-card:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 36px rgba(0,0,0,0.30);
-            border-color: rgba(196,223,7,0.15);
+            box-shadow: 0 12px 36px rgba(0, 0, 0, 0.30);
+            border-color: rgba(196, 223, 7, 0.15);
         }
+
         .avis-card-head {
-            display: flex; align-items: center; gap: 12px; margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
         }
+
         .avis-card-avatar {
-            width: 40px; height: 40px; border-radius: 50%; flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            flex-shrink: 0;
             background: linear-gradient(135deg, var(--deep-light) 0%, #1a5c60 100%);
-            display: flex; align-items: center; justify-content: center;
-            font-size: 15px; font-weight: 600; color: var(--lime);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--lime);
         }
-        .avis-card-meta { flex: 1; }
-        .avis-card-who { font-size: 14px; font-weight: 600; color: var(--text-on-dark); line-height: 1.3; }
-        .avis-card-date { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
-        .avis-card-stars { color: var(--gold); font-size: 12px; letter-spacing: 1px; margin-bottom: 12px; }
+
+        .avis-card-meta {
+            flex: 1;
+        }
+
+        .avis-card-who {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-on-dark);
+            line-height: 1.3;
+        }
+
+        .avis-card-date {
+            font-size: 11px;
+            color: var(--text-dim);
+            margin-top: 2px;
+        }
+
+        .avis-card-stars {
+            color: var(--gold);
+            font-size: 12px;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
         .avis-card-g {
-            display: inline-block; margin-left: 6px; vertical-align: middle;
+            display: inline-block;
+            margin-left: 6px;
+            vertical-align: middle;
         }
-        .avis-card-g svg { width: 14px; height: 14px; vertical-align: middle; }
+
+        .avis-card-g svg {
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+        }
+
         .avis-card-txt {
-            font-size: 15px; color: var(--text-on-dark); line-height: 1.70;
+            font-size: 15px;
+            color: var(--text-on-dark);
+            line-height: 1.70;
             opacity: 0.92;
         }
 
         /* Footer avis */
-        .avis-footer { margin-top: 20px; }
+        .avis-footer {
+            margin-top: 20px;
+        }
+
         .avis-footer a {
-            display: inline-flex; align-items: center; gap: 5px;
-            font-size: 12px; color: var(--text-dim); font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 12px;
+            color: var(--text-dim);
+            font-weight: 500;
             transition: color 0.2s;
         }
-        .avis-footer a:hover { color: var(--blanc); }
-        .avis-footer a svg { width: 12px; height: 12px; }
+
+        .avis-footer a:hover {
+            color: var(--blanc);
+        }
+
+        .avis-footer a svg {
+            width: 12px;
+            height: 12px;
+        }
 
         /* ═══════════════════════════════════════════════
            STYLES PARTAGÉS
            ═══════════════════════════════════════════════ */
         .s-title {
-            font-family: var(--ff-display); font-weight: 400;
-            font-size: clamp(28px, 3.8vw, 44px); line-height: 1.12;
+            font-family: var(--ff-display);
+            font-weight: 400;
+            font-size: clamp(28px, 3.8vw, 44px);
+            line-height: 1.12;
             letter-spacing: -0.02em;
         }
+
         .s-label {
-            display: inline-flex; align-items: center; gap: 8px;
-            font-size: 11px; font-weight: 600; text-transform: uppercase;
-            letter-spacing: 2.5px; color: rgba(255,255,255,0.70); margin-bottom: 14px;
-            padding: 5px 14px; border-radius: 4px;
-            background: rgba(255,255,255,0.06);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2.5px;
+            color: rgba(255, 255, 255, 0.70);
+            margin-bottom: 14px;
+            padding: 5px 14px;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.06);
         }
-        .s-label::before { content: ''; width: 16px; height: 2px; background: rgba(255,255,255,0.40); }
-        .s-label--light { color: var(--deep); background: rgba(10,42,47,0.06); }
-        .s-label--light::before { background: var(--deep); }
-        .s-sub { font-size: 19px; line-height: 1.70; margin-top: 18px; }
+
+        .s-label::before {
+            content: '';
+            width: 16px;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.40);
+        }
+
+        .s-label--light {
+            color: var(--deep);
+            background: rgba(10, 42, 47, 0.06);
+        }
+
+        .s-label--light::before {
+            background: var(--deep);
+        }
+
+        .s-sub {
+            font-size: 19px;
+            line-height: 1.70;
+            margin-top: 18px;
+        }
 
         /* ═══════════════════════════════════════════════
            7. LE CONSTAT — dégradé cream + image
@@ -429,43 +854,102 @@
             padding: clamp(48px, 6vw, 72px) 28px;
             background: linear-gradient(180deg, #d4d0c7 0%, var(--cream) 15%, var(--cream) 50%, #eeebe3 100%);
         }
+
         .constat-layout {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 48px; align-items: start;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: start;
         }
-        .constat-left .s-title { color: var(--text-primary); margin-bottom: 12px; font-size: clamp(24px, 3vw, 32px); }
+
+        .constat-left .s-title {
+            color: var(--text-primary);
+            margin-bottom: 12px;
+            font-size: clamp(24px, 3vw, 32px);
+        }
+
         .constat-intro {
-            font-size: 16px; color: var(--text-secondary); line-height: 1.65;
+            font-size: 16px;
+            color: var(--text-secondary);
+            line-height: 1.65;
             margin-bottom: 20px;
         }
+
         .constat-cost {
-            display: inline-flex; align-items: center; gap: 8px;
-            padding: 8px 16px; border-radius: 8px;
-            background: rgba(212,68,68,0.06); border: 1px solid rgba(212,68,68,0.12);
-            font-size: 14px; font-weight: 600; color: #b91c1c;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 8px;
+            background: rgba(212, 68, 68, 0.06);
+            border: 1px solid rgba(212, 68, 68, 0.12);
+            font-size: 14px;
+            font-weight: 600;
+            color: #b91c1c;
         }
-        .constat-cost span { font-weight: 400; color: var(--text-secondary); }
-        .constat-list { list-style: none; padding-top: 56px; }
+
+        .constat-cost span {
+            font-weight: 400;
+            color: var(--text-secondary);
+        }
+
+        .constat-list {
+            list-style: none;
+            padding-top: 56px;
+        }
+
         .constat-list li {
-            display: flex; align-items: flex-start; gap: 12px;
-            padding: 10px 8px; margin-left: -8px; margin-right: -8px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 10px 8px;
+            margin-left: -8px;
+            margin-right: -8px;
             border-bottom: 1px solid var(--grey-100);
-            font-size: 15px; color: var(--text-primary); line-height: 1.50;
+            font-size: 15px;
+            color: var(--text-primary);
+            line-height: 1.50;
             border-radius: var(--radius-sm);
             transition: background 0.3s ease, padding-left 0.3s ease;
         }
-        .constat-list li:hover { background: rgba(212,68,68,0.03); padding-left: 12px; }
-        .constat-list li:last-child { border-bottom: none; padding-bottom: 0; }
-        .constat-list li:first-child { padding-top: 0; }
+
+        .constat-list li:hover {
+            background: rgba(212, 68, 68, 0.03);
+            padding-left: 12px;
+        }
+
+        .constat-list li:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .constat-list li:first-child {
+            padding-top: 0;
+        }
+
         .constat-x {
-            flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%;
-            background: rgba(212,68,68,0.08);
-            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgba(212, 68, 68, 0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin-top: 2px;
         }
-        .constat-x svg { width: 11px; height: 11px; color: #D44; }
+
+        .constat-x svg {
+            width: 11px;
+            height: 11px;
+            color: #D44;
+        }
+
         .constat-li-sub {
-            display: block; font-size: 13px; color: var(--text-secondary); font-weight: 400;
+            display: block;
+            font-size: 13px;
+            color: var(--text-secondary);
+            font-weight: 400;
             margin-top: 1px;
         }
 
@@ -476,12 +960,30 @@
             padding: clamp(56px, 7vw, 88px) 28px;
             background: linear-gradient(180deg, #eeebe3 0%, var(--cream) 50%, var(--cream-light) 100%);
         }
-        .distinction-head { text-align: center; margin-bottom: 48px; }
-        .distinction-head .s-title { color: var(--text-primary); font-size: clamp(26px, 3.2vw, 36px); }
-        .distinction-head .s-sub { color: var(--text-secondary); max-width: 560px; margin-left: auto; margin-right: auto; }
+
+        .distinction-head {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .distinction-head .s-title {
+            color: var(--text-primary);
+            font-size: clamp(26px, 3.2vw, 36px);
+        }
+
+        .distinction-head .s-sub {
+            color: var(--text-secondary);
+            max-width: 560px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .dist-grid {
-            display: grid; grid-template-columns: repeat(3, 1fr);
-            gap: 24px; max-width: 1080px; margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1080px;
+            margin: 0 auto;
         }
 
         /* ── Carte visuelle ── */
@@ -490,87 +992,121 @@
             position: relative;
             overflow: hidden;
             min-height: 440px;
-            display: flex; flex-direction: column;
+            display: flex;
+            flex-direction: column;
             transition: transform 0.35s ease, box-shadow 0.35s ease;
         }
+
         .dist-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.20);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.20);
         }
 
         /* Image de fond */
         .dist-card-bg {
-            position: absolute; inset: 0; z-index: 0;
-            background-size: cover; background-position: center;
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            background-size: cover;
+            background-position: center;
             transition: transform 0.5s ease;
         }
-        .dist-card:hover .dist-card-bg { transform: scale(1.02); }
+
+        .dist-card:hover .dist-card-bg {
+            transform: scale(1.02);
+        }
 
         /* Overlay sombre */
         .dist-card-bg::after {
-            content: ''; position: absolute; inset: 0;
+            content: '';
+            position: absolute;
+            inset: 0;
             background: linear-gradient(180deg,
-                rgba(10,36,40,0.40) 0%,
-                rgba(10,36,40,0.55) 40%,
-                rgba(6,24,28,0.75) 70%,
-                rgba(3,10,11,0.88) 100%);
+                    rgba(10, 36, 40, 0.40) 0%,
+                    rgba(10, 36, 40, 0.55) 40%,
+                    rgba(6, 24, 28, 0.75) 70%,
+                    rgba(3, 10, 11, 0.88) 100%);
         }
 
         /* Contenu au-dessus de l'overlay */
         .dist-card-content {
-            position: relative; z-index: 1;
+            position: relative;
+            z-index: 1;
             padding: 32px 28px;
-            display: flex; flex-direction: column;
+            display: flex;
+            flex-direction: column;
             flex: 1;
         }
 
         /* Ligne icône + badge */
         .dist-top-row {
-            display: flex; align-items: center; gap: 14px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
             margin-bottom: 20px;
         }
 
         /* Icône glassmorphism */
         .dist-icon {
-            width: 48px; height: 48px; flex-shrink: 0;
+            width: 48px;
+            height: 48px;
+            flex-shrink: 0;
             border-radius: 12px;
-            background: rgba(255,255,255,0.12);
-            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
-            border: 1px solid rgba(255,255,255,0.15);
-            display: flex; align-items: center; justify-content: center;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
-        .dist-icon svg { width: 22px; height: 22px; color: var(--blanc); stroke-width: 1.5; }
+
+        .dist-icon svg {
+            width: 22px;
+            height: 22px;
+            color: var(--blanc);
+            stroke-width: 1.5;
+        }
 
         /* Badge à côté de l'icône */
         .dist-badge {
-            font-size: 12px; font-weight: 700;
-            text-transform: uppercase; letter-spacing: 2px;
-            color: rgba(196,223,7,0.85);
-            text-shadow: 0 1px 6px rgba(0,0,0,0.30);
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: rgba(196, 223, 7, 0.85);
+            text-shadow: 0 1px 6px rgba(0, 0, 0, 0.30);
         }
 
         /* Titre — plus gros */
         .dist-title {
             font-family: var(--ff-display);
-            font-size: clamp(22px, 2.5vw, 27px); font-weight: 500;
-            color: var(--blanc); line-height: 1.25;
-            margin-bottom: auto; padding-bottom: 18px;
-            text-shadow: 0 2px 12px rgba(0,0,0,0.35);
+            font-size: clamp(22px, 2.5vw, 27px);
+            font-weight: 500;
+            color: var(--blanc);
+            line-height: 1.25;
+            margin-bottom: auto;
+            padding-bottom: 18px;
+            text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35);
         }
 
         /* Description — plus lisible */
         .dist-desc {
-            font-size: 15px; color: rgba(255,255,255,0.90);
+            font-size: 15px;
+            color: rgba(255, 255, 255, 0.90);
             line-height: 1.70;
-            text-shadow: 0 1px 4px rgba(0,0,0,0.25);
+            text-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
         }
 
         /* Alerte en bas */
         .dist-alert {
-            margin-top: 20px; padding-top: 16px;
-            border-top: 1px solid rgba(255,255,255,0.12);
-            font-size: 13px; color: #fbbf24;
-            line-height: 1.55; font-weight: 500;
+            margin-top: 20px;
+            padding-top: 16px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            font-size: 13px;
+            color: #fbbf24;
+            line-height: 1.55;
+            font-weight: 500;
         }
 
         /* ═══════════════════════════════════════════════
@@ -580,39 +1116,97 @@
             padding: clamp(64px, 8vw, 96px) 28px clamp(48px, 6vw, 72px);
             background:
                 linear-gradient(180deg,
-                    rgba(12,46,51,0.92) 0%,
-                    rgba(10,42,47,0.88) 30%,
-                    rgba(10,42,47,0.92) 70%,
-                    rgba(8,36,40,0.95) 100%),
+                    rgba(12, 46, 51, 0.92) 0%,
+                    rgba(10, 42, 47, 0.88) 30%,
+                    rgba(10, 42, 47, 0.92) 70%,
+                    rgba(8, 36, 40, 0.95) 100%),
                 url('https://images.pexels.com/photos/10926534/pexels-photo-10926534.jpeg?auto=compress&cs=tinysrgb&w=1920') center / cover no-repeat;
             position: relative;
         }
-        .etapes-head { text-align: center; margin-bottom: 64px; }
-        .etapes-head .s-title { color: var(--blanc); }
-        .etapes-head .s-sub { color: var(--text-dim); max-width: 520px; margin-left: auto; margin-right: auto; }
+
+        .etapes-head {
+            text-align: center;
+            margin-bottom: 64px;
+        }
+
+        .etapes-head .s-title {
+            color: var(--blanc);
+        }
+
+        .etapes-head .s-sub {
+            color: var(--text-dim);
+            max-width: 520px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         .etapes-track {
-            display: grid; grid-template-columns: repeat(4, 1fr);
-            gap: 0; position: relative; max-width: 960px; margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            position: relative;
+            max-width: 960px;
+            margin: 0 auto;
         }
+
         .etapes-track::before {
-            content: ''; position: absolute; top: 28px; left: 8%; right: 8%;
+            content: '';
+            position: absolute;
+            top: 28px;
+            left: 8%;
+            right: 8%;
             height: 1px;
-            background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.10) 20%, rgba(255,255,255,0.10) 80%, transparent 100%);
+            background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.10) 20%, rgba(255, 255, 255, 0.10) 80%, transparent 100%);
         }
-        .e-step { text-align: center; position: relative; z-index: 1; padding: 0 12px; transition: transform 0.3s ease; }
-        .e-step:hover { transform: translateY(-4px); }
-        .e-step:hover .e-icon { border-color: rgba(196,223,7,0.30); box-shadow: 0 4px 20px rgba(196,223,7,0.10); }
+
+        .e-step {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            padding: 0 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .e-step:hover {
+            transform: translateY(-4px);
+        }
+
+        .e-step:hover .e-icon {
+            border-color: rgba(196, 223, 7, 0.30);
+            box-shadow: 0 4px 20px rgba(196, 223, 7, 0.10);
+        }
+
         .e-icon {
-            display: inline-flex; align-items: center; justify-content: center;
-            width: 56px; height: 56px; border-radius: 50%;
-            background: linear-gradient(145deg, rgba(196,223,7,0.08) 0%, rgba(196,223,7,0.03) 100%);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: linear-gradient(145deg, rgba(196, 223, 7, 0.08) 0%, rgba(196, 223, 7, 0.03) 100%);
             border: 1px solid rgba(196, 223, 7, 0.12);
-            color: var(--lime); margin-bottom: 20px;
+            color: var(--lime);
+            margin-bottom: 20px;
             transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
-        .e-icon svg { width: 22px; height: 22px; }
-        .e-step-t { font-size: 17px; font-weight: 600; color: var(--blanc); margin-bottom: 8px; }
-        .e-step-d { font-size: 15px; color: var(--text-dim); line-height: 1.65; }
+
+        .e-icon svg {
+            width: 22px;
+            height: 22px;
+        }
+
+        .e-step-t {
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--blanc);
+            margin-bottom: 8px;
+        }
+
+        .e-step-d {
+            font-size: 15px;
+            color: var(--text-dim);
+            line-height: 1.65;
+        }
 
 
 
@@ -623,50 +1217,146 @@
             padding: var(--section-pad) 28px;
             background: linear-gradient(180deg, #071f23 0%, var(--deep-dark) 50%, #04171a 100%);
         }
-        .selection-head { text-align: center; margin-bottom: 48px; }
-        .selection-head .s-title { color: var(--blanc); }
-        .selection-head .s-sub { color: var(--text-dim); }
-        .sel-grid {
-            display: grid; grid-template-columns: 1fr 1fr;
-            gap: 24px; max-width: 900px; margin: 0 auto;
+
+        .selection-head {
+            text-align: center;
+            margin-bottom: 48px;
         }
+
+        .selection-head .s-title {
+            color: var(--blanc);
+        }
+
+        .selection-head .s-sub {
+            color: var(--text-dim);
+        }
+
+        .sel-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
         .sel-col {
-            border-radius: var(--radius-lg); padding: 32px;
-            backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
             transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
         }
-        .sel-col:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.20); }
-        .sel-col--y:hover { border-color: rgba(196,223,7,0.35); }
-        .sel-col--n:hover { border-color: rgba(212,68,68,0.30); }
+
+        .sel-col:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(0, 0, 0, 0.20);
+        }
+
+        .sel-col--y:hover {
+            border-color: rgba(196, 223, 7, 0.35);
+        }
+
+        .sel-col--n:hover {
+            border-color: rgba(212, 68, 68, 0.30);
+        }
+
         .sel-col--y {
-            background: linear-gradient(145deg, rgba(196,223,7,0.08) 0%, rgba(196,223,7,0.02) 100%);
-            border: 1px solid rgba(196,223,7,0.20);
+            background: linear-gradient(145deg, rgba(196, 223, 7, 0.08) 0%, rgba(196, 223, 7, 0.02) 100%);
+            border: 1px solid rgba(196, 223, 7, 0.20);
         }
+
         .sel-col--n {
-            background: linear-gradient(145deg, rgba(212,68,68,0.06) 0%, rgba(212,68,68,0.02) 100%);
-            border: 1px solid rgba(212,68,68,0.15);
+            background: linear-gradient(145deg, rgba(212, 68, 68, 0.06) 0%, rgba(212, 68, 68, 0.02) 100%);
+            border: 1px solid rgba(212, 68, 68, 0.15);
         }
-        .sel-col-t { font-size: 18px; font-weight: 600; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
-        .sel-col--y .sel-col-t { color: var(--lime); }
-        .sel-col--y .sel-col-t::before { content: '✓'; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: rgba(196,223,7,0.15); font-size: 14px; font-weight: 700; }
-        .sel-col--n .sel-col-t { color: #f87171; }
-        .sel-col--n .sel-col-t::before { content: '✕'; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: rgba(212,68,68,0.12); font-size: 14px; font-weight: 700; }
-        .sel-col ul { list-style: none; }
+
+        .sel-col-t {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sel-col--y .sel-col-t {
+            color: var(--lime);
+        }
+
+        .sel-col--y .sel-col-t::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(196, 223, 7, 0.15);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .sel-col--n .sel-col-t {
+            color: #f87171;
+        }
+
+        .sel-col--n .sel-col-t::before {
+            content: '✕';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: rgba(212, 68, 68, 0.12);
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .sel-col ul {
+            list-style: none;
+        }
+
         .sel-col li {
-            font-size: 16px; color: var(--text-on-dark); line-height: 1.65;
-            padding: 8px 0 8px 32px; position: relative;
+            font-size: 16px;
+            color: var(--text-on-dark);
+            line-height: 1.65;
+            padding: 8px 0 8px 32px;
+            position: relative;
         }
+
         .sel-col--y li::before {
-            content: '✓'; position: absolute; left: 0; color: var(--lime); font-weight: 700;
-            width: 20px; height: 20px; font-size: 12px;
-            display: inline-flex; align-items: center; justify-content: center;
-            background: rgba(196,223,7,0.10); border-radius: 50%; top: 10px;
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--lime);
+            font-weight: 700;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(196, 223, 7, 0.10);
+            border-radius: 50%;
+            top: 10px;
         }
+
         .sel-col--n li::before {
-            content: '✕'; position: absolute; left: 0; color: #f87171; font-weight: 700;
-            width: 20px; height: 20px; font-size: 10px;
-            display: inline-flex; align-items: center; justify-content: center;
-            background: rgba(212,68,68,0.10); border-radius: 50%; top: 10px;
+            content: '✕';
+            position: absolute;
+            left: 0;
+            color: #f87171;
+            font-weight: 700;
+            width: 20px;
+            height: 20px;
+            font-size: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(212, 68, 68, 0.10);
+            border-radius: 50%;
+            top: 10px;
         }
 
         /* ═══════════════════════════════════════════════
@@ -676,47 +1366,100 @@
             padding: var(--section-pad) 28px;
             background: linear-gradient(180deg, var(--cream-light) 0%, var(--cream) 40%, #eeebe3 100%);
         }
+
         .histoire-layout {
-            display: flex; flex-direction: column; align-items: center;
-            max-width: 720px; margin: 0 auto; text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
         }
-        .histoire-head { margin-bottom: 32px; }
-        .histoire-head .s-label { margin-bottom: 0; }
-        .histoire .s-label { background: rgba(10,42,47,0.08); color: var(--deep); }
+
+        .histoire-head {
+            margin-bottom: 32px;
+        }
+
+        .histoire-head .s-label {
+            margin-bottom: 0;
+        }
+
+        .histoire .s-label {
+            background: rgba(10, 42, 47, 0.08);
+            color: var(--deep);
+        }
+
         .histoire-text {
-            font-size: 16px; color: var(--grey-600); line-height: 1.75;
+            font-size: 16px;
+            color: var(--grey-600);
+            line-height: 1.75;
         }
-        .histoire-text p { margin-bottom: 16px; }
-        .histoire-text strong { color: var(--deep); font-weight: 600; }
+
+        .histoire-text p {
+            margin-bottom: 16px;
+        }
+
+        .histoire-text strong {
+            color: var(--deep);
+            font-weight: 600;
+        }
+
         /* Bulles équipe — en ligne au-dessus du texte */
         .histoire-team-grid {
             margin-bottom: 36px;
         }
+
         .histoire-bubble {
-            display: flex; flex-direction: column; align-items: center; gap: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
         }
+
         .histoire-bubble-img {
-            width: 96px; height: 96px; border-radius: 50%;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
             background: var(--deep);
             border: 3px solid var(--deep-light);
-            box-shadow: 0 6px 24px rgba(10,42,47,0.18);
-            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 6px 24px rgba(10, 42, 47, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
             position: relative;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .histoire-bubble:hover .histoire-bubble-img { transform: translateY(-3px) scale(1.03); box-shadow: 0 10px 32px rgba(10,42,47,0.28); }
+
+        .histoire-bubble:hover .histoire-bubble-img {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 10px 32px rgba(10, 42, 47, 0.28);
+        }
+
         .histoire-bubble-img span {
-            font-family: var(--ff-display); font-size: 32px; color: var(--lime); font-weight: 400;
+            font-family: var(--ff-display);
+            font-size: 32px;
+            color: var(--lime);
+            font-weight: 400;
         }
+
         .histoire-bubble-name {
-            font-size: 14px; font-weight: 600; color: var(--deep); text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--deep);
+            text-align: center;
         }
+
         .histoire-bubble-role {
-            font-size: 11px; color: var(--grey-400); margin-top: -4px;
+            font-size: 11px;
+            color: var(--grey-400);
+            margin-top: -4px;
         }
+
         .histoire-bubbles-row {
-            display: flex; gap: 48px; justify-content: center;
+            display: flex;
+            gap: 48px;
+            justify-content: center;
         }
 
         /* ═══════════════════════════════════════════════
@@ -726,67 +1469,171 @@
             padding: clamp(48px, 6vw, 72px) 28px var(--section-pad);
             background: linear-gradient(180deg, #082428 0%, var(--deep) 40%, #0c2e33 100%);
         }
-        .services-head { text-align: center; margin-bottom: 56px; }
-        .services-head .s-title { color: var(--blanc); }
-        .services-head .s-sub { color: var(--text-dim); max-width: 540px; margin-left: auto; margin-right: auto; }
+
+        .services-head {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .services-head .s-title {
+            color: var(--blanc);
+        }
+
+        .services-head .s-sub {
+            color: var(--text-dim);
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         /* Escalier visuel — timeline gauche + cards horizontales */
         .srv-track {
-            max-width: 900px; margin: 0 auto; position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
             padding-left: 56px;
         }
+
         .srv-track::before {
-            content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 2px;
-            background: linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.15) 30%, var(--lime) 65%, rgba(196,223,7,0.08) 100%);
+            content: '';
+            position: absolute;
+            left: 19px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.15) 30%, var(--lime) 65%, rgba(196, 223, 7, 0.08) 100%);
         }
+
         .srv-step {
-            position: relative; margin-bottom: 24px;
-            display: grid; grid-template-columns: 1fr; gap: 0;
-            background: rgba(255,255,255,0.03);
-            border: 1px solid rgba(255,255,255,0.07);
+            position: relative;
+            margin-bottom: 24px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.07);
             border-radius: var(--radius-lg);
             padding: 24px 28px;
             transition: background 0.3s, box-shadow 0.3s, border-color 0.3s;
         }
-        .srv-step:last-child { margin-bottom: 0; }
-        .srv-step:hover { background: rgba(255,255,255,0.05); box-shadow: 0 8px 32px rgba(0,0,0,0.15); }
-        .srv-step--3 { border-color: rgba(196,223,7,0.2); background: rgba(196,223,7,0.03); }
-        .srv-step--3:hover { background: rgba(196,223,7,0.06); }
+
+        .srv-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .srv-step:hover {
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        }
+
+        .srv-step--3 {
+            border-color: rgba(196, 223, 7, 0.2);
+            background: rgba(196, 223, 7, 0.03);
+        }
+
+        .srv-step--3:hover {
+            background: rgba(196, 223, 7, 0.06);
+        }
+
         .srv-step-dot {
-            position: absolute; left: -56px; top: 24px;
-            width: 40px; height: 40px; border-radius: 50%;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 15px; font-weight: 700; z-index: 2;
+            position: absolute;
+            left: -56px;
+            top: 24px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            font-weight: 700;
+            z-index: 2;
         }
-        .srv-step--1 .srv-step-dot { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.70); border: 2px solid rgba(255,255,255,0.15); }
-        .srv-step--2 .srv-step-dot { background: rgba(255,255,255,0.12); color: var(--blanc); border: 2px solid rgba(255,255,255,0.25); }
-        .srv-step--3 .srv-step-dot { background: var(--lime); color: var(--deep); border: 2px solid var(--lime); }
+
+        .srv-step--1 .srv-step-dot {
+            background: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.70);
+            border: 2px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .srv-step--2 .srv-step-dot {
+            background: rgba(255, 255, 255, 0.12);
+            color: var(--blanc);
+            border: 2px solid rgba(255, 255, 255, 0.25);
+        }
+
+        .srv-step--3 .srv-step-dot {
+            background: var(--lime);
+            color: var(--deep);
+            border: 2px solid var(--lime);
+        }
+
         .srv-step-top {
-            display: flex; align-items: center; gap: 16px; margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 12px;
         }
+
         .srv-step-tag {
-            display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase;
-            letter-spacing: 2px; padding: 4px 10px; border-radius: 4px; flex-shrink: 0;
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 4px 10px;
+            border-radius: 4px;
+            flex-shrink: 0;
         }
-        .srv-step--1 .srv-step-tag { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.65); }
-        .srv-step--2 .srv-step-tag { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.80); }
-        .srv-step--3 .srv-step-tag { background: var(--lime); color: var(--deep); }
+
+        .srv-step--1 .srv-step-tag {
+            background: rgba(255, 255, 255, 0.06);
+            color: rgba(255, 255, 255, 0.65);
+        }
+
+        .srv-step--2 .srv-step-tag {
+            background: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.80);
+        }
+
+        .srv-step--3 .srv-step-tag {
+            background: var(--lime);
+            color: var(--deep);
+        }
+
         .srv-title {
-            font-size: 20px; font-weight: 600; color: var(--blanc);
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--blanc);
             line-height: 1.30;
         }
+
         .srv-desc {
-            font-size: 16px; color: var(--text-dim); line-height: 1.70;
+            font-size: 16px;
+            color: var(--text-dim);
+            line-height: 1.70;
             margin-bottom: 14px;
         }
+
         .srv-pills {
-            display: flex; flex-wrap: wrap; gap: 8px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
         }
+
         .srv-pill {
-            font-size: 13px; color: var(--text-on-dark); padding: 5px 12px;
-            background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+            font-size: 13px;
+            color: var(--text-on-dark);
+            padding: 5px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 20px;
         }
-        .srv-step--3 .srv-pill { background: rgba(196,223,7,0.08); border-color: rgba(196,223,7,0.15); }
+
+        .srv-step--3 .srv-pill {
+            background: rgba(196, 223, 7, 0.08);
+            border-color: rgba(196, 223, 7, 0.15);
+        }
 
         /* (Consulting : supprimé) */
 
@@ -797,28 +1644,83 @@
             padding: var(--section-pad) 28px;
             background: linear-gradient(180deg, #0c2e33 0%, var(--deep) 50%, #082428 100%);
         }
-        .faq-head { text-align: center; margin-bottom: 52px; }
-        .faq-head .s-title { color: var(--blanc); }
-        .faq-list { max-width: 700px; margin: 0 auto; }
-        .faq-item { border-bottom: 1px solid rgba(255, 255, 255, 0.06); }
+
+        .faq-head {
+            text-align: center;
+            margin-bottom: 52px;
+        }
+
+        .faq-head .s-title {
+            color: var(--blanc);
+        }
+
+        .faq-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
         .faq-q {
-            width: 100%; background: none; border: none; text-align: left;
-            cursor: pointer; padding: 24px 44px 24px 16px;
-            font-size: 17px; font-weight: 600; color: var(--text-on-dark);
-            font-family: var(--ff-body); line-height: 1.4;
-            position: relative; transition: color 0.2s, background 0.3s, padding-left 0.3s;
-            border-radius: var(--radius-sm); margin-left: -16px; margin-right: -16px;
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            padding: 24px 44px 24px 16px;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-on-dark);
+            font-family: var(--ff-body);
+            line-height: 1.4;
+            position: relative;
+            transition: color 0.2s, background 0.3s, padding-left 0.3s;
+            border-radius: var(--radius-sm);
+            margin-left: -16px;
+            margin-right: -16px;
         }
-        .faq-q:hover { color: var(--blanc); background: rgba(255,255,255,0.04); padding-left: 20px; }
+
+        .faq-q:hover {
+            color: var(--blanc);
+            background: rgba(255, 255, 255, 0.04);
+            padding-left: 20px;
+        }
+
         .faq-q::after {
-            content: '+'; position: absolute; right: 0; top: 50%;
-            transform: translateY(-50%); font-size: 20px; font-weight: 300;
-            color: var(--text-dim); transition: color 0.2s;
+            content: '+';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            font-weight: 300;
+            color: var(--text-dim);
+            transition: color 0.2s;
         }
-        .faq-item.open .faq-q::after { content: '\2212'; color: var(--blanc); }
-        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; }
-        .faq-item.open .faq-a { max-height: 320px; }
-        .faq-a-in { padding: 0 0 24px; font-size: 16px; color: var(--text-dim); line-height: 1.70; }
+
+        .faq-item.open .faq-q::after {
+            content: '\2212';
+            color: var(--blanc);
+        }
+
+        .faq-a {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .faq-item.open .faq-a {
+            max-height: 320px;
+        }
+
+        .faq-a-in {
+            padding: 0 0 24px;
+            font-size: 16px;
+            color: var(--text-dim);
+            line-height: 1.70;
+        }
 
         /* ═══════════════════════════════════════════════
            13. CTA FINAL — dégradé vers noir
@@ -828,17 +1730,38 @@
             background: linear-gradient(180deg, #082428 0%, var(--deep-dark) 30%, var(--noir) 100%);
             text-align: center;
         }
-        .cta-end .s-title { color: var(--blanc); margin-bottom: 40px; font-size: clamp(30px, 4vw, 48px); }
+
+        .cta-end .s-title {
+            color: var(--blanc);
+            margin-bottom: 40px;
+            font-size: clamp(30px, 4vw, 48px);
+        }
+
         .cta-pills {
-            display: flex; justify-content: center; gap: 28px; flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+            gap: 28px;
+            flex-wrap: wrap;
             margin-bottom: 44px;
         }
+
         .cta-pill {
-            display: flex; align-items: center; gap: 8px;
-            font-size: 15px; color: var(--text-on-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 15px;
+            color: var(--text-on-dark);
         }
-        .cta-pill span { color: var(--blanc); font-size: 6px; opacity: 0.5; }
-        .cta-end .hero-micro { color: var(--text-dim); }
+
+        .cta-pill span {
+            color: var(--blanc);
+            font-size: 6px;
+            opacity: 0.5;
+        }
+
+        .cta-end .hero-micro {
+            color: var(--text-dim);
+        }
 
         /* ═══════════════════════════════════════════════
            14. FOOTER
@@ -847,126 +1770,371 @@
             padding: 48px 28px 36px;
             background: var(--noir);
         }
+
         .footer-in {
-            max-width: var(--max-w); margin: 0 auto;
-            display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px;
+            max-width: var(--max-w);
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
         }
-        .footer-logo { display: inline-block; margin-bottom: 8px; }
-        .footer-logo img { height: 180px; width: auto; }
-        .footer-l { display: flex; flex-direction: column; align-items: center; }
-        .footer-l p { font-size: 13px; color: var(--grey-400); line-height: 1.7; }
-        .footer-r { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
-        .footer-r a { font-size: 13px; color: var(--grey-400); transition: color 0.2s; position: relative; }
+
+        .footer-logo {
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+
+        .footer-logo img {
+            height: 180px;
+            width: auto;
+        }
+
+        .footer-l {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-l p {
+            font-size: 13px;
+            color: var(--grey-400);
+            line-height: 1.7;
+        }
+
+        .footer-r {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .footer-r a {
+            font-size: 13px;
+            color: var(--grey-400);
+            transition: color 0.2s;
+            position: relative;
+        }
+
         .footer-r a::after {
-            content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 1px;
-            background: var(--blanc); transition: width 0.3s ease;
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--blanc);
+            transition: width 0.3s ease;
         }
-        .footer-r a:hover { color: var(--blanc); }
-        .footer-r a:hover::after { width: 100%; }
+
+        .footer-r a:hover {
+            color: var(--blanc);
+        }
+
+        .footer-r a:hover::after {
+            width: 100%;
+        }
 
         /* ═══════════════════════════════════════════════
            16. STICKY MOBILE CTA
            ═══════════════════════════════════════════════ */
         .sticky-m {
-            display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 98;
-            background: linear-gradient(180deg, rgba(10,42,47,0.95) 0%, var(--deep) 100%);
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 98;
+            background: linear-gradient(180deg, rgba(10, 42, 47, 0.95) 0%, var(--deep) 100%);
             border-top: 1px solid rgba(255, 255, 255, 0.08);
-            padding: 14px 20px; text-align: center;
-            transform: translateY(100%); transition: transform 0.3s;
-            backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+            padding: 14px 20px;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
-        .sticky-m.show { transform: translateY(0); }
-        .sticky-m a { color: var(--blanc); font-weight: 600; font-size: 14px; letter-spacing: 0.3px; }
+
+        .sticky-m.show {
+            transform: translateY(0);
+        }
+
+        .sticky-m a {
+            color: var(--blanc);
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: 0.3px;
+        }
 
         /* ═══════════════════════════════════════════════
            17. RESPONSIVE
            ═══════════════════════════════════════════════ */
         @media (max-width: 920px) {
-            .nav-in { height: 70px; padding: 0 20px; }
-            .logo img { height: 90px; }
-            .nav-mid { display: none; }
-            .btn-nav.desk { display: none; }
-            .ham { display: block; }
-            .hero { padding: 120px 28px 60px; }
-            .avis-layout { grid-template-columns: 1fr; }
-            .avis-head { margin-bottom: 20px; }
-            .constat-layout { grid-template-columns: 1fr; gap: 24px; }
-            .constat-list { padding-top: 0; }
-            .etapes-track { grid-template-columns: 1fr; gap: 0; }
-            .etapes-track::before { display: none; }
-            .e-step {
-                text-align: left; display: grid; grid-template-columns: 56px 1fr;
-                gap: 16px; align-items: start; padding: 24px 0;
-                border-left: 1px solid rgba(255, 255, 255, 0.08); padding-left: 24px; margin-left: 28px;
+            .nav-in {
+                height: 80px;
+                padding: 0 16px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
-            .e-icon { margin-bottom: 0; margin-left: -52px; }
-            .e-step-t, .e-step-d { text-align: left; }
+
+            .logo img {
+                height: 140px;
+            }
+
+            .nav-mid {
+                display: none;
+            }
+
+            .btn-nav.desk {
+                display: none;
+            }
+
+            .ham {
+                display: block;
+                margin-left: auto;
+            }
+
+            .hero {
+                padding: 120px 28px 60px;
+            }
+
+            .avis-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .avis-head {
+                margin-bottom: 20px;
+            }
+
+            .constat-layout {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .constat-list {
+                padding-top: 0;
+            }
+
+            .etapes-track {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .etapes-track::before {
+                display: none;
+            }
+
+            .e-step {
+                text-align: left;
+                display: grid;
+                grid-template-columns: 56px 1fr;
+                gap: 16px;
+                align-items: start;
+                padding: 24px 0;
+                border-left: 1px solid rgba(255, 255, 255, 0.08);
+                padding-left: 24px;
+                margin-left: 28px;
+            }
+
+            .e-icon {
+                margin-bottom: 0;
+                margin-left: -52px;
+            }
+
+            .e-step-t,
+            .e-step-d {
+                text-align: left;
+            }
+
             /* Timeline mobile — dots intégrés dans la card */
-            .srv-track { padding-left: 0; }
-            .srv-track::before { display: none; }
-            .srv-step { padding: 20px; margin-bottom: 16px; }
+            .srv-track {
+                padding-left: 0;
+            }
+
+            .srv-track::before {
+                display: none;
+            }
+
+            .srv-step {
+                padding: 20px;
+                margin-bottom: 16px;
+            }
+
             .srv-step-dot {
                 position: static;
-                width: 28px; height: 28px; border-radius: 50%;
-                font-size: 11px; font-weight: 700;
-                display: inline-flex; align-items: center; justify-content: center;
-                margin: 0; flex-shrink: 0;
+                width: 28px;
+                height: 28px;
+                border-radius: 50%;
+                font-size: 11px;
+                font-weight: 700;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                flex-shrink: 0;
             }
-            .srv-step--1 .srv-step-dot { background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.70); border: 1px solid rgba(255,255,255,0.15); }
-            .srv-step--2 .srv-step-dot { background: rgba(255,255,255,0.12); color: var(--blanc); border: 1px solid rgba(255,255,255,0.25); }
-            .srv-step--3 .srv-step-dot { background: var(--lime); color: var(--deep); border: 1px solid var(--lime); }
-            .srv-step-top { flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
-            .srv-title { font-size: 17px; }
-            .srv-desc { font-size: 14px; margin-bottom: 10px; }
-            .srv-pills { gap: 6px; }
-            .srv-pill { font-size: 11px; padding: 4px 10px; }
+
+            .srv-step--1 .srv-step-dot {
+                background: rgba(255, 255, 255, 0.08);
+                color: rgba(255, 255, 255, 0.70);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+            }
+
+            .srv-step--2 .srv-step-dot {
+                background: rgba(255, 255, 255, 0.12);
+                color: var(--blanc);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+            }
+
+            .srv-step--3 .srv-step-dot {
+                background: var(--lime);
+                color: var(--deep);
+                border: 1px solid var(--lime);
+            }
+
+            .srv-step-top {
+                flex-wrap: wrap;
+                gap: 8px;
+                margin-bottom: 8px;
+            }
+
+            .srv-title {
+                font-size: 17px;
+            }
+
+            .srv-desc {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .srv-pills {
+                gap: 6px;
+            }
+
+            .srv-pill {
+                font-size: 11px;
+                padding: 4px 10px;
+            }
+
             .dist-grid {
-                display: flex; gap: 16px; overflow-x: auto; -webkit-overflow-scrolling: touch;
-                scroll-snap-type: x mandatory; padding-bottom: 8px;
-                margin: 0 -16px; padding-left: 16px; padding-right: 16px;
+                display: flex;
+                gap: 16px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                scroll-snap-type: x mandatory;
+                padding-bottom: 8px;
+                margin: 0 -16px;
+                padding-left: 16px;
+                padding-right: 16px;
             }
+
             .dist-card {
-                min-width: 300px; flex: 0 0 85vw; max-width: 360px;
-                min-height: 380px; scroll-snap-align: center;
+                min-width: 300px;
+                flex: 0 0 85vw;
+                max-width: 360px;
+                min-height: 380px;
+                scroll-snap-align: center;
             }
-            .dist-card-content { padding: 28px 24px; }
-            .hero-proofs { gap: 24px; font-size: 13px; }
-            .sel-grid { grid-template-columns: 1fr; }
-            .histoire-bubbles-row { gap: 28px; }
-            .cta-pills { flex-direction: column; align-items: center; gap: 12px; }
-            .sticky-m { display: block; }
+
+            .dist-card-content {
+                padding: 28px 24px;
+            }
+
+            .hero-proofs {
+                gap: 24px;
+                font-size: 13px;
+            }
+
+            .sel-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .histoire-bubbles-row {
+                gap: 28px;
+            }
+
+            .cta-pills {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .sticky-m {
+                display: block;
+            }
         }
+
         @media (max-width: 600px) {
-            .hero h1 { font-size: clamp(26px, 7vw, 34px); }
-            .hero-proofs { flex-direction: column; align-items: center; gap: 10px; }
-            body { padding-bottom: 56px; }
-            .services-head .s-title { font-size: clamp(24px, 6vw, 32px); }
-            .services-head .s-sub { font-size: 14px; }
-            .srv-step-top { flex-direction: column; align-items: flex-start; gap: 6px; }
-            .histoire-bubbles-row { flex-direction: row; gap: 24px; }
-            .histoire-bubble-img { width: 80px; height: 80px; }
-            .sel-grid { gap: 16px; }
-            .sel-col { padding: 24px 20px; }
+            .hero h1 {
+                font-size: clamp(26px, 7vw, 34px);
+            }
+
+            .hero-proofs {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            body {
+                padding-bottom: 56px;
+            }
+
+            .services-head .s-title {
+                font-size: clamp(24px, 6vw, 32px);
+            }
+
+            .services-head .s-sub {
+                font-size: 14px;
+            }
+
+            .srv-step-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+
+            .histoire-bubbles-row {
+                flex-direction: row;
+                gap: 24px;
+            }
+
+            .histoire-bubble-img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .sel-grid {
+                gap: 16px;
+            }
+
+            .sel-col {
+                padding: 24px 20px;
+            }
         }
     </style>
     <!-- Facebook Pixel Code -->
     <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1037583104457149');
-    fbq('track', 'PageView');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1037583104457149');
+        fbq('track', 'PageView');
     </script>
     <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1037583104457149&ev=PageView&noscript=1"
-    /></noscript>
+            src="https://www.facebook.com/tr?id=1037583104457149&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 </head>
+
 <body>
 
     <a href="#main" class="skip-link">Aller au contenu principal</a>
@@ -983,7 +2151,8 @@
                 <a href="#services">Accompagnement</a>
                 <a href="#faq">FAQ</a>
             </div>
-            <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener" class="btn-nav desk">Réserver un appel</a>
+            <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener" class="btn-nav desk">Réserver
+                un appel</a>
             <button class="ham" id="ham" aria-label="Menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
@@ -994,7 +2163,8 @@
         <a href="#methode" class="ml">Méthode</a>
         <a href="#services" class="ml">Accompagnement</a>
         <a href="#faq" class="ml">FAQ</a>
-        <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener" class="btn-nav">Réserver votre appel de sélection</a>
+        <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener" class="btn-nav">Réserver votre
+            appel de sélection</a>
     </div>
 
     <main id="main">
@@ -1009,7 +2179,9 @@
                 <div class="r d3">
                     <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener" class="btn-primary">
                         Réserver votre appel de sélection
-                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M3 8h10M9 4l4 4-4 4" />
+                        </svg>
                     </a>
                 </div>
                 <div class="hero-proofs r d3">
@@ -1023,19 +2195,33 @@
         <!-- ════════════════ 2. AVIS GOOGLE ════════════════ -->
         <section class="avis" id="avis">
             <div class="avis-layout">
-            <div class="avis-head">
-                <div class="avis-google-badge">
-                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                    <span>Avis Google</span>
-                </div>
-                <div class="avis-summary">
-                    <span class="avis-big-score">5,0</span>
-                    <div class="avis-summary-right">
-                        <span class="avis-stars" aria-label="5 étoiles sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-                        <span class="avis-count">9 avis vérifiés</span>
+                <div class="avis-head">
+                    <div class="avis-google-badge">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                        <span>Avis Google</span>
                     </div>
-                </div>
-                <!-- Lien avis Google — à réactiver avec le bon lien
+                    <div class="avis-summary">
+                        <span class="avis-big-score">5,0</span>
+                        <div class="avis-summary-right">
+                            <span class="avis-stars"
+                                aria-label="5 étoiles sur 5">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            <span class="avis-count">9 avis vérifiés</span>
+                        </div>
+                    </div>
+                    <!-- Lien avis Google — à réactiver avec le bon lien
                 <div class="avis-footer">
                     <a href="#" target="_blank" rel="noopener">
                         Voir tous les avis
@@ -1043,43 +2229,85 @@
                     </a>
                 </div>
                 -->
-            </div>
-            <div class="avis-track-wrap">
-            <div class="avis-track" id="avisTrack">
-                <!-- Original 3 cards -->
-                <div class="avis-card">
-                    <div class="avis-card-head"><div class="avis-card-avatar">Y</div><div class="avis-card-meta"><div class="avis-card-who">Yohan M.</div><div class="avis-card-date">novembre 2024</div></div></div>
-                    <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <div class="avis-card-txt">L'équipe a vraiment clarifié les étapes et priorités de mon projet. Je sais exactement où aller, quoi faire, dans quel ordre.</div>
                 </div>
-                <div class="avis-card">
-                    <div class="avis-card-head"><div class="avis-card-avatar">V</div><div class="avis-card-meta"><div class="avis-card-who">Val G.</div><div class="avis-card-date">septembre 2024</div></div></div>
-                    <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <div class="avis-card-txt">L'expert a su me trouver un terrain alors que j'étais bloqué sur cette partie depuis plusieurs mois. Cadrage rapide et efficace.</div>
+                <div class="avis-track-wrap">
+                    <div class="avis-track" id="avisTrack">
+                        <!-- Original 3 cards -->
+                        <div class="avis-card">
+                            <div class="avis-card-head">
+                                <div class="avis-card-avatar">Y</div>
+                                <div class="avis-card-meta">
+                                    <div class="avis-card-who">Yohan M.</div>
+                                    <div class="avis-card-date">novembre 2024</div>
+                                </div>
+                            </div>
+                            <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="avis-card-txt">L'équipe a vraiment clarifié les étapes et priorités de mon
+                                projet. Je sais exactement où aller, quoi faire, dans quel ordre.</div>
+                        </div>
+                        <div class="avis-card">
+                            <div class="avis-card-head">
+                                <div class="avis-card-avatar">V</div>
+                                <div class="avis-card-meta">
+                                    <div class="avis-card-who">Val G.</div>
+                                    <div class="avis-card-date">septembre 2024</div>
+                                </div>
+                            </div>
+                            <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="avis-card-txt">L'expert a su me trouver un terrain alors que j'étais bloqué sur
+                                cette partie depuis plusieurs mois. Cadrage rapide et efficace.</div>
+                        </div>
+                        <div class="avis-card">
+                            <div class="avis-card-head">
+                                <div class="avis-card-avatar">K</div>
+                                <div class="avis-card-meta">
+                                    <div class="avis-card-who">Kylian M.</div>
+                                    <div class="avis-card-date">août 2024</div>
+                                </div>
+                            </div>
+                            <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="avis-card-txt">Un grand merci pour l'accompagnement. N'ayant pas beaucoup de
+                                temps libre, ça me permet d'avancer en toute sérénité sur mon projet.</div>
+                        </div>
+                        <!-- Duplicates pour boucle infinie -->
+                        <div class="avis-card">
+                            <div class="avis-card-head">
+                                <div class="avis-card-avatar">Y</div>
+                                <div class="avis-card-meta">
+                                    <div class="avis-card-who">Yohan M.</div>
+                                    <div class="avis-card-date">novembre 2024</div>
+                                </div>
+                            </div>
+                            <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="avis-card-txt">L'équipe a vraiment clarifié les étapes et priorités de mon
+                                projet. Je sais exactement où aller, quoi faire, dans quel ordre.</div>
+                        </div>
+                        <div class="avis-card">
+                            <div class="avis-card-head">
+                                <div class="avis-card-avatar">V</div>
+                                <div class="avis-card-meta">
+                                    <div class="avis-card-who">Val G.</div>
+                                    <div class="avis-card-date">septembre 2024</div>
+                                </div>
+                            </div>
+                            <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="avis-card-txt">L'expert a su me trouver un terrain alors que j'étais bloqué sur
+                                cette partie depuis plusieurs mois. Cadrage rapide et efficace.</div>
+                        </div>
+                        <div class="avis-card">
+                            <div class="avis-card-head">
+                                <div class="avis-card-avatar">K</div>
+                                <div class="avis-card-meta">
+                                    <div class="avis-card-who">Kylian M.</div>
+                                    <div class="avis-card-date">août 2024</div>
+                                </div>
+                            </div>
+                            <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                            <div class="avis-card-txt">Un grand merci pour l'accompagnement. N'ayant pas beaucoup de
+                                temps libre, ça me permet d'avancer en toute sérénité sur mon projet.</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="avis-card">
-                    <div class="avis-card-head"><div class="avis-card-avatar">K</div><div class="avis-card-meta"><div class="avis-card-who">Kylian M.</div><div class="avis-card-date">août 2024</div></div></div>
-                    <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <div class="avis-card-txt">Un grand merci pour l'accompagnement. N'ayant pas beaucoup de temps libre, ça me permet d'avancer en toute sérénité sur mon projet.</div>
-                </div>
-                <!-- Duplicates pour boucle infinie -->
-                <div class="avis-card">
-                    <div class="avis-card-head"><div class="avis-card-avatar">Y</div><div class="avis-card-meta"><div class="avis-card-who">Yohan M.</div><div class="avis-card-date">novembre 2024</div></div></div>
-                    <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <div class="avis-card-txt">L'équipe a vraiment clarifié les étapes et priorités de mon projet. Je sais exactement où aller, quoi faire, dans quel ordre.</div>
-                </div>
-                <div class="avis-card">
-                    <div class="avis-card-head"><div class="avis-card-avatar">V</div><div class="avis-card-meta"><div class="avis-card-who">Val G.</div><div class="avis-card-date">septembre 2024</div></div></div>
-                    <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <div class="avis-card-txt">L'expert a su me trouver un terrain alors que j'étais bloqué sur cette partie depuis plusieurs mois. Cadrage rapide et efficace.</div>
-                </div>
-                <div class="avis-card">
-                    <div class="avis-card-head"><div class="avis-card-avatar">K</div><div class="avis-card-meta"><div class="avis-card-who">Kylian M.</div><div class="avis-card-date">août 2024</div></div></div>
-                    <div class="avis-card-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-                    <div class="avis-card-txt">Un grand merci pour l'accompagnement. N'ayant pas beaucoup de temps libre, ça me permet d'avancer en toute sérénité sur mon projet.</div>
-                </div>
-            </div>
-            </div>
             </div>
         </section>
 
@@ -1090,25 +2318,44 @@
                     <div class="constat-left">
                         <div class="s-label s-label--light r">Le constat</div>
                         <h2 class="s-title r d1">Ce qui fait échouer la majorité des projets padel.</h2>
-                        <p class="constat-intro r d2">Les projets ne s'arrêtent pas par manque d'énergie. Ils s'arrêtent parce qu'une décision structurante a été prise sans données, sans cadre, ou au mauvais moment.</p>
-                        <div class="constat-cost r d2">⚠ <span>6 à 18 mois de retard en moyenne, et souvent un abandon définitif.</span></div>
+                        <p class="constat-intro r d2">Les projets ne s'arrêtent pas par manque d'énergie. Ils s'arrêtent
+                            parce qu'une décision structurante a été prise sans données, sans cadre, ou au mauvais
+                            moment.</p>
+                        <div class="constat-cost r d2">⚠ <span>6 à 18 mois de retard en moyenne, et souvent un abandon
+                                définitif.</span></div>
                     </div>
                     <ul class="constat-list r d1">
                         <li>
-                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></div>
-                            <div><strong>Bail signé sans étude de zone</strong><span class="constat-li-sub">La zone ne génère pas assez de flux. Le bail court, le projet est bloqué.</span></div>
+                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M18 6L6 18M6 6l12 12" />
+                                </svg></div>
+                            <div><strong>Bail signé sans étude de zone</strong><span class="constat-li-sub">La zone ne
+                                    génère pas assez de flux. Le bail court, le projet est bloqué.</span></div>
                         </li>
                         <li>
-                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></div>
-                            <div><strong>Dimensionnement à l'intuition</strong><span class="constat-li-sub">8 terrains quand 5 suffisent, impact direct sur la rentabilité.</span></div>
+                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M18 6L6 18M6 6l12 12" />
+                                </svg></div>
+                            <div><strong>Dimensionnement à l'intuition</strong><span class="constat-li-sub">8 terrains
+                                    quand 5 suffisent, impact direct sur la rentabilité.</span></div>
                         </li>
                         <li>
-                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></div>
-                            <div><strong>Business plan sans benchmark</strong><span class="constat-li-sub">Renvoyé par l'analyste, souvent sans deuxième chance.</span></div>
+                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M18 6L6 18M6 6l12 12" />
+                                </svg></div>
+                            <div><strong>Business plan sans benchmark</strong><span class="constat-li-sub">Renvoyé par
+                                    l'analyste, souvent sans deuxième chance.</span></div>
                         </li>
                         <li>
-                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg></div>
-                            <div><strong>Interlocuteurs sollicités trop tôt</strong><span class="constat-li-sub">Chaque mauvais timing génère des coûts et de l'inertie.</span></div>
+                            <div class="constat-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path d="M18 6L6 18M6 6l12 12" />
+                                </svg></div>
+                            <div><strong>Interlocuteurs sollicités trop tôt</strong><span class="constat-li-sub">Chaque
+                                    mauvais timing génère des coûts et de l'inertie.</span></div>
                         </li>
                     </ul>
                 </div>
@@ -1121,54 +2368,78 @@
                 <div class="distinction-head">
                     <div class="s-label s-label--light r">Ce qui fait la différence</div>
                     <h2 class="s-title r d1">Ce qui distingue un projet viable<br>d'un projet fragile.</h2>
-                    <p class="s-sub r d2" style="color:var(--text-secondary)">Trois fondamentaux. Chacun est mesurable, chacun est vérifiable, et chacun conditionne la suite.</p>
+                    <p class="s-sub r d2" style="color:var(--text-secondary)">Trois fondamentaux. Chacun est mesurable,
+                        chacun est vérifiable, et chacun conditionne la suite.</p>
                 </div>
                 <div class="dist-grid">
 
                     <!-- Bloc 1 — Analyse de zone -->
                     <div class="dist-card r">
-                        <div class="dist-card-bg" style="background-image:url('https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+                        <div class="dist-card-bg"
+                            style="background-image:url('https://images.pexels.com/photos/2859169/pexels-photo-2859169.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                        </div>
                         <div class="dist-card-content">
                             <div class="dist-top-row">
                                 <div class="dist-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <circle cx="12" cy="12" r="3" />
+                                        <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                                    </svg>
                                 </div>
                                 <div class="dist-badge">01 — Analyse de zone</div>
                             </div>
                             <div class="dist-title">Votre zone peut-elle vraiment soutenir un club ?</div>
-                            <div class="dist-desc">Flux, accessibilité, concurrence, bassin de population active. Pas une estimation : une analyse documentée, terrain par terrain.</div>
+                            <div class="dist-desc">Flux, accessibilité, concurrence, bassin de population active. Pas
+                                une estimation : une analyse documentée, terrain par terrain.</div>
                             <div class="dist-alert">⚠ Sans ça : un bail signé sur une zone morte.</div>
                         </div>
                     </div>
 
                     <!-- Bloc 2 — Dimensionnement -->
                     <div class="dist-card r d1">
-                        <div class="dist-card-bg" style="background-image:url('https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+                        <div class="dist-card-bg"
+                            style="background-image:url('https://images.pexels.com/photos/585419/pexels-photo-585419.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                        </div>
                         <div class="dist-card-content">
                             <div class="dist-top-row">
                                 <div class="dist-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M2 20h20"/><path d="M5 20V8l5-5 5 5v12"/><path d="M9 20v-4h2v4"/><path d="M17 20V12l3-2v10"/></svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M2 20h20" />
+                                        <path d="M5 20V8l5-5 5 5v12" />
+                                        <path d="M9 20v-4h2v4" />
+                                        <path d="M17 20V12l3-2v10" />
+                                    </svg>
                                 </div>
                                 <div class="dist-badge">02 — Dimensionnement</div>
                             </div>
                             <div class="dist-title">Combien de terrains, pour quel budget réel ?</div>
-                            <div class="dist-desc">Nombre de terrains, format du club, budget d'aménagement : calibrés sur les données réelles, pas sur l'envie du porteur.</div>
-                            <div class="dist-alert">⚠ Sans ça : un modèle surdimensionné qui ne passe pas en financement.</div>
+                            <div class="dist-desc">Nombre de terrains, format du club, budget d'aménagement : calibrés
+                                sur les données réelles, pas sur l'envie du porteur.</div>
+                            <div class="dist-alert">⚠ Sans ça : un modèle surdimensionné qui ne passe pas en
+                                financement.</div>
                         </div>
                     </div>
 
                     <!-- Bloc 3 — Séquencement -->
                     <div class="dist-card r d2">
-                        <div class="dist-card-bg" style="background-image:url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800')"></div>
+                        <div class="dist-card-bg"
+                            style="background-image:url('https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                        </div>
                         <div class="dist-card-content">
                             <div class="dist-top-row">
                                 <div class="dist-icon">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                        <path d="M2 17l10 5 10-5" />
+                                        <path d="M2 12l10 5 10-5" />
+                                    </svg>
                                 </div>
                                 <div class="dist-badge">03 — Séquencement</div>
                             </div>
                             <div class="dist-title">Les décisions prises au bon moment.</div>
-                            <div class="dist-desc">Valider la zone avant le foncier, le foncier avant le plan, le plan avant les rendez-vous financiers. Chaque étape dans l'ordre.</div>
+                            <div class="dist-desc">Valider la zone avant le foncier, le foncier avant le plan, le plan
+                                avant les rendez-vous financiers. Chaque étape dans l'ordre.</div>
                             <div class="dist-alert">⚠ Sans ça : des mois de retard et des interlocuteurs perdus.</div>
                         </div>
                     </div>
@@ -1183,43 +2454,61 @@
                 <div class="etapes-head">
                     <div class="s-label r">La méthode</div>
                     <h2 class="s-title r d1">Quatre étapes. Un cadre structuré.</h2>
-                    <p class="s-sub r d2">Chaque étape produit un livrable défini. Chaque livrable répond à un niveau d'exigence. Rien n'est laissé à l'interprétation.</p>
+                    <p class="s-sub r d2">Chaque étape produit un livrable défini. Chaque livrable répond à un niveau
+                        d'exigence. Rien n'est laissé à l'interprétation.</p>
                 </div>
                 <div class="etapes-track">
                     <div class="e-step r">
                         <div class="e-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="3" />
+                                <path d="M12 2v4M12 18v4M2 12h4M18 12h4" />
+                            </svg>
                         </div>
                         <div>
                             <div class="e-step-t">Cadrage initial</div>
-                            <div class="e-step-d">Vous complétez un questionnaire structuré. On évalue la maturité du projet, le contexte, les conditions de faisabilité.</div>
+                            <div class="e-step-d">Vous complétez un questionnaire structuré. On évalue la maturité du
+                                projet, le contexte, les conditions de faisabilité.</div>
                         </div>
                     </div>
                     <div class="e-step r d1">
                         <div class="e-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                            </svg>
                         </div>
                         <div>
                             <div class="e-step-t">Appel de sélection</div>
-                            <div class="e-step-d">Un échange pour valider la cohérence du projet. Si les conditions ne sont pas réunies, on vous le dit clairement.</div>
+                            <div class="e-step-d">Un échange pour valider la cohérence du projet. Si les conditions ne
+                                sont pas réunies, on vous le dit clairement.</div>
                         </div>
                     </div>
                     <div class="e-step r d2">
                         <div class="e-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                                <path d="M2 17l10 5 10-5" />
+                                <path d="M2 12l10 5 10-5" />
+                            </svg>
                         </div>
                         <div>
                             <div class="e-step-t">Structuration</div>
-                            <div class="e-step-d">Audit, marché, foncier, dossier de financement. Chaque livrable a un calendrier, un format, un niveau d'exigence.</div>
+                            <div class="e-step-d">Audit, marché, foncier, dossier de financement. Chaque livrable a un
+                                calendrier, un format, un niveau d'exigence.</div>
                         </div>
                     </div>
                     <div class="e-step r d3">
                         <div class="e-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10" />
+                                <polygon points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88" />
+                            </svg>
                         </div>
                         <div>
                             <div class="e-step-t">Suivi & arbitrages</div>
-                            <div class="e-step-d">Un interlocuteur dédié pour ajuster, arbitrer, avancer. Pas de réunions sans objet, pas de reporting inutile.</div>
+                            <div class="e-step-d">Un interlocuteur dédié pour ajuster, arbitrer, avancer. Pas de
+                                réunions sans objet, pas de reporting inutile.</div>
                         </div>
                     </div>
                 </div>
@@ -1232,7 +2521,9 @@
                 <div class="services-head">
                     <div class="s-label r">L'accompagnement</div>
                     <h2 class="s-title r d1">Un cadre global, activé selon votre avancement.</h2>
-                    <p class="s-sub r d2" style="color:var(--text-dim)">Marché, foncier, financement, exploitation. Un seul accompagnement qui couvre l'ensemble du projet. Chaque étape s'active quand votre projet l'exige.</p>
+                    <p class="s-sub r d2" style="color:var(--text-dim)">Marché, foncier, financement, exploitation. Un
+                        seul accompagnement qui couvre l'ensemble du projet. Chaque étape s'active quand votre projet
+                        l'exige.</p>
                 </div>
                 <div class="srv-track">
                     <div class="srv-step srv-step--1 r">
@@ -1241,7 +2532,9 @@
                             <div class="srv-step-tag">Point de départ</div>
                             <div class="srv-title">Audit & Diagnostic</div>
                         </div>
-                        <div class="srv-desc">On analyse votre zone, la concurrence locale et la faisabilité réelle du projet. Vous repartez avec un diagnostic clair : feu vert, ajustements nécessaires, ou stop.</div>
+                        <div class="srv-desc">On analyse votre zone, la concurrence locale et la faisabilité réelle du
+                            projet. Vous repartez avec un diagnostic clair : feu vert, ajustements nécessaires, ou stop.
+                        </div>
                         <div class="srv-pills">
                             <span class="srv-pill">Zone de chalandise</span>
                             <span class="srv-pill">Concurrence locale</span>
@@ -1255,7 +2548,9 @@
                             <div class="srv-step-tag">Construction</div>
                             <div class="srv-title">Structuration du dossier</div>
                         </div>
-                        <div class="srv-desc">On rédige le business plan, on modélise le prévisionnel, on qualifie le foncier. Chaque pièce du dossier est construite pour passer devant un analyste bancaire.</div>
+                        <div class="srv-desc">On rédige le business plan, on modélise le prévisionnel, on qualifie le
+                            foncier. Chaque pièce du dossier est construite pour passer devant un analyste bancaire.
+                        </div>
                         <div class="srv-pills">
                             <span class="srv-pill">Business plan</span>
                             <span class="srv-pill">Prévisionnel financier</span>
@@ -1269,7 +2564,8 @@
                             <div class="srv-step-tag">Exécution</div>
                             <div class="srv-title">Suivi & Pilotage</div>
                         </div>
-                        <div class="srv-desc">On vous accompagne dans les rendez-vous, on arbitre avec vous les décisions clés et on coordonne les intervenants jusqu'à la concrétisation du projet.</div>
+                        <div class="srv-desc">On vous accompagne dans les rendez-vous, on arbitre avec vous les
+                            décisions clés et on coordonne les intervenants jusqu'à la concrétisation du projet.</div>
                         <div class="srv-pills">
                             <span class="srv-pill">Interlocuteur dédié</span>
                             <span class="srv-pill">Suivi régulier</span>
@@ -1279,7 +2575,9 @@
                     </div>
                 </div>
 
-                <p class="srv-note r d3" style="text-align:center; font-size:13px; color:var(--text-dim); margin-top:32px;">L'appel de sélection est gratuit. Il permet de valider ensemble si un accompagnement est pertinent.</p>
+                <p class="srv-note r d3"
+                    style="text-align:center; font-size:13px; color:var(--text-dim); margin-top:32px;">L'appel de
+                    sélection est gratuit. Il permet de valider ensemble si un accompagnement est pertinent.</p>
 
             </div>
         </section>
@@ -1290,7 +2588,8 @@
                 <div class="selection-head">
                     <div class="s-label r">Sélection</div>
                     <h2 class="s-title r d1">Un accompagnement sélectif.<br>Et c'est assumé.</h2>
-                    <p class="s-sub r d2" style="color:var(--text-dim)">Nous ne travaillons pas avec tous les porteurs qui nous contactent. C'est ce qui garantit le niveau de chaque dossier produit.</p>
+                    <p class="s-sub r d2" style="color:var(--text-dim)">Nous ne travaillons pas avec tous les porteurs
+                        qui nous contactent. C'est ce qui garantit le niveau de chaque dossier produit.</p>
                 </div>
                 <div class="sel-grid">
                     <div class="sel-col sel-col--y r">
@@ -1323,9 +2622,16 @@
                         <div class="s-label r">Qui sommes-nous</div>
                     </div>
                     <div class="histoire-text r d1">
-                        <p>On n'est pas arrivés dans le padel par hasard. Avant PadelProgram, on était <strong>apporteurs d'affaires pour des fournisseurs de terrains de padel</strong>. On a vu le marché de l'intérieur : les constructeurs, les exploitants, les projets qui passent, et ceux qui échouent.</p>
-                        <p>Ce qu'on a constaté, projet après projet : <strong>des porteurs de projets livrés à eux-mêmes</strong>. Des études bâclées, des business plans qui ne tiennent pas face à un analyste, des fonciers mal qualifiés. Des projets solides qui tombent, pas par manque d'ambition, mais par manque de méthode.</p>
-                        <p>On a créé PadelProgram pour ça : <strong>être à côté du porteur de projet</strong>, jusqu'à l'ouverture. Pas un prestataire. Un co-pilote.</p>
+                        <p>On n'est pas arrivés dans le padel par hasard. Avant PadelProgram, on était
+                            <strong>apporteurs d'affaires pour des fournisseurs de terrains de padel</strong>. On a vu
+                            le marché de l'intérieur : les constructeurs, les exploitants, les projets qui passent, et
+                            ceux qui échouent.</p>
+                        <p>Ce qu'on a constaté, projet après projet : <strong>des porteurs de projets livrés à
+                                eux-mêmes</strong>. Des études bâclées, des business plans qui ne tiennent pas face à un
+                            analyste, des fonciers mal qualifiés. Des projets solides qui tombent, pas par manque
+                            d'ambition, mais par manque de méthode.</p>
+                        <p>On a créé PadelProgram pour ça : <strong>être à côté du porteur de projet</strong>, jusqu'à
+                            l'ouverture. Pas un prestataire. Un co-pilote.</p>
                     </div>
                 </div>
             </div>
@@ -1340,44 +2646,103 @@
                 </div>
                 <div class="faq-list">
                     <div class="faq-item r">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-1">Que se passe-t-il concrètement après l'appel de sélection ?</button>
-                        <div class="faq-a" id="faq-1" role="region"><div class="faq-a-in">Si votre profil est retenu, on vous propose un périmètre d'accompagnement adapté à l'avancement de votre projet. L'accompagnement démarre par un audit de zone et un diagnostic de faisabilité. Chaque étape produit un livrable défini, avec un calendrier et un niveau d'exigence précis.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-1">Que se passe-t-il concrètement
+                            après l'appel de sélection ?</button>
+                        <div class="faq-a" id="faq-1" role="region">
+                            <div class="faq-a-in">Si votre profil est retenu, on vous propose un périmètre
+                                d'accompagnement adapté à l'avancement de votre projet. L'accompagnement démarre par un
+                                audit de zone et un diagnostic de faisabilité. Chaque étape produit un livrable défini,
+                                avec un calendrier et un niveau d'exigence précis.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d1">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-2">Est-ce que je peux commencer uniquement par l'audit, sans m'engager sur la suite ?</button>
-                        <div class="faq-a" id="faq-2" role="region"><div class="faq-a-in">Oui. L'audit et le diagnostic constituent la première étape. Vous repartez avec un rapport de faisabilité clair : feu vert, ajustements nécessaires, ou stop. La suite n'est activée que si les conditions sont réunies et que vous décidez de poursuivre.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-2">Est-ce que je peux commencer
+                            uniquement par l'audit, sans m'engager sur la suite ?</button>
+                        <div class="faq-a" id="faq-2" role="region">
+                            <div class="faq-a-in">Oui. L'audit et le diagnostic constituent la première étape. Vous
+                                repartez avec un rapport de faisabilité clair : feu vert, ajustements nécessaires, ou
+                                stop. La suite n'est activée que si les conditions sont réunies et que vous décidez de
+                                poursuivre.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d1">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-3">Mon projet est encore au stade d'idée. C'est trop tôt ?</button>
-                        <div class="faq-a" id="faq-3" role="region"><div class="faq-a-in">L'appel de sélection sert justement à évaluer où vous en êtes. Si votre projet est trop précoce, on vous le dit et on vous indique ce qu'il faut consolider avant de revenir. Aucun porteur n'est accompagné si les bases ne sont pas là.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-3">Mon projet est encore au stade
+                            d'idée. C'est trop tôt ?</button>
+                        <div class="faq-a" id="faq-3" role="region">
+                            <div class="faq-a-in">L'appel de sélection sert justement à évaluer où vous en êtes. Si
+                                votre projet est trop précoce, on vous le dit et on vous indique ce qu'il faut
+                                consolider avant de revenir. Aucun porteur n'est accompagné si les bases ne sont pas là.
+                            </div>
+                        </div>
                     </div>
                     <div class="faq-item r d2">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-4">Quel budget prévoir pour l'accompagnement ?</button>
-                        <div class="faq-a" id="faq-4" role="region"><div class="faq-a-in">Le montant dépend du périmètre retenu : audit seul, structuration complète, ou suivi jusqu'à l'ouverture. Les conditions tarifaires sont présentées lors de l'échange de sélection, une fois le périmètre défini. Il n'y a pas de grille unique parce qu'aucun projet n'a le même point de départ.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-4">Quel budget prévoir pour
+                            l'accompagnement ?</button>
+                        <div class="faq-a" id="faq-4" role="region">
+                            <div class="faq-a-in">Le montant dépend du périmètre retenu : audit seul, structuration
+                                complète, ou suivi jusqu'à l'ouverture. Les conditions tarifaires sont présentées lors
+                                de l'échange de sélection, une fois le périmètre défini. Il n'y a pas de grille unique
+                                parce qu'aucun projet n'a le même point de départ.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d2">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-5">Combien de temps dure un accompagnement, du diagnostic à l'ouverture ?</button>
-                        <div class="faq-a" id="faq-5" role="region"><div class="faq-a-in">Un audit de zone prend en général quelques semaines. Un accompagnement complet, du diagnostic à la concrétisation du projet, s'étend sur plusieurs mois selon la complexité du foncier, du financement et des autorisations. On vous donne un calendrier prévisionnel dès le cadrage initial.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-5">Combien de temps dure un
+                            accompagnement, du diagnostic à l'ouverture ?</button>
+                        <div class="faq-a" id="faq-5" role="region">
+                            <div class="faq-a-in">Un audit de zone prend en général quelques semaines. Un accompagnement
+                                complet, du diagnostic à la concrétisation du projet, s'étend sur plusieurs mois selon
+                                la complexité du foncier, du financement et des autorisations. On vous donne un
+                                calendrier prévisionnel dès le cadrage initial.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d2">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-6">Est-ce que vous garantissez l'obtention d'un financement ?</button>
-                        <div class="faq-a" id="faq-6" role="region"><div class="faq-a-in">Non. Le financement dépend de facteurs que personne ne contrôle : conjoncture économique, profil emprunteur, politique de l'organisme prêteur. Ce que nous garantissons, c'est un dossier structuré, documenté et défendable devant un analyste financier. C'est la condition nécessaire, pas la condition suffisante.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-6">Est-ce que vous garantissez
+                            l'obtention d'un financement ?</button>
+                        <div class="faq-a" id="faq-6" role="region">
+                            <div class="faq-a-in">Non. Le financement dépend de facteurs que personne ne contrôle :
+                                conjoncture économique, profil emprunteur, politique de l'organisme prêteur. Ce que nous
+                                garantissons, c'est un dossier structuré, documenté et défendable devant un analyste
+                                financier. C'est la condition nécessaire, pas la condition suffisante.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d3">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-7">Qu'est-ce qui est inclus dans l'accompagnement, et qu'est-ce qui ne l'est pas ?</button>
-                        <div class="faq-a" id="faq-7" role="region"><div class="faq-a-in">L'accompagnement couvre l'étude de zone, le business plan, le prévisionnel financier, la qualification foncière et le suivi stratégique. Il ne remplace pas un expert-comptable, un avocat ou un architecte. On coordonne les intervenants, on ne se substitue pas à eux.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-7">Qu'est-ce qui est inclus dans
+                            l'accompagnement, et qu'est-ce qui ne l'est pas ?</button>
+                        <div class="faq-a" id="faq-7" role="region">
+                            <div class="faq-a-in">L'accompagnement couvre l'étude de zone, le business plan, le
+                                prévisionnel financier, la qualification foncière et le suivi stratégique. Il ne
+                                remplace pas un expert-comptable, un avocat ou un architecte. On coordonne les
+                                intervenants, on ne se substitue pas à eux.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d3">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-8">Quelle différence avec un consultant, une franchise, ou monter le projet seul ?</button>
-                        <div class="faq-a" id="faq-8" role="region"><div class="faq-a-in">Un consultant produit un livrable ponctuel, sans suivi. Une franchise impose un modèle, un fournisseur et des redevances. Monter seul, c'est possible, mais chaque erreur de séquencement coûte des mois. PadelProgram structure l'ensemble du parcours avec un interlocuteur dédié, sans vous enfermer dans un modèle imposé.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-8">Quelle différence avec un
+                            consultant, une franchise, ou monter le projet seul ?</button>
+                        <div class="faq-a" id="faq-8" role="region">
+                            <div class="faq-a-in">Un consultant produit un livrable ponctuel, sans suivi. Une franchise
+                                impose un modèle, un fournisseur et des redevances. Monter seul, c'est possible, mais
+                                chaque erreur de séquencement coûte des mois. PadelProgram structure l'ensemble du
+                                parcours avec un interlocuteur dédié, sans vous enfermer dans un modèle imposé.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d3">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-9">Que se passe-t-il si mon projet n'est pas retenu ?</button>
-                        <div class="faq-a" id="faq-9" role="region"><div class="faq-a-in">On vous explique précisément pourquoi et on vous indique les axes à renforcer. Pas de relance commerciale. Si votre situation évolue, vous pouvez reprendre contact. La sélection n'est pas un jugement : c'est une condition pour que l'accompagnement produise un résultat.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-9">Que se passe-t-il si mon
+                            projet n'est pas retenu ?</button>
+                        <div class="faq-a" id="faq-9" role="region">
+                            <div class="faq-a-in">On vous explique précisément pourquoi et on vous indique les axes à
+                                renforcer. Pas de relance commerciale. Si votre situation évolue, vous pouvez reprendre
+                                contact. La sélection n'est pas un jugement : c'est une condition pour que
+                                l'accompagnement produise un résultat.</div>
+                        </div>
                     </div>
                     <div class="faq-item r d3">
-                        <button class="faq-q" aria-expanded="false" aria-controls="faq-10">Vous accompagnez des projets partout en France et à l'international ?</button>
-                        <div class="faq-a" id="faq-10" role="region"><div class="faq-a-in">Oui, en France métropolitaine, outre-mer et à l'international. La méthode s'adapte aux spécificités réglementaires et économiques locales. L'essentiel du travail se fait à distance, avec des points réguliers.</div></div>
+                        <button class="faq-q" aria-expanded="false" aria-controls="faq-10">Vous accompagnez des projets
+                            partout en France et à l'international ?</button>
+                        <div class="faq-a" id="faq-10" role="region">
+                            <div class="faq-a-in">Oui, en France métropolitaine, outre-mer et à l'international. La
+                                méthode s'adapte aux spécificités réglementaires et économiques locales. L'essentiel du
+                                travail se fait à distance, avec des points réguliers.</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1387,11 +2752,16 @@
         <section class="cta-end">
             <div class="wrap">
                 <div class="text-cap mx-auto">
-                    <h2 class="s-title r">Si une décision structurante approche,<br>parlons-en avant qu'elle ne soit prise.</h2>
+                    <h2 class="s-title r">Si une décision structurante approche,<br>parlons-en avant qu'elle ne soit
+                        prise.</h2>
                     <div class="r d1" style="margin-top: 44px;">
-                        <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener" class="btn-primary">
+                        <a href="https://form.typeform.com/to/OktIQ7XG" target="_blank" rel="noopener"
+                            class="btn-primary">
                             Réserver votre appel de sélection
-                            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+                            <svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor"
+                                stroke-width="2" aria-hidden="true">
+                                <path d="M3 8h10M9 4l4 4-4 4" />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -1550,77 +2920,78 @@
 
     <!-- ════════════════ SCRIPTS ════════════════ -->
     <script>
-    (function () {
-        'use strict';
+        (function () {
+            'use strict';
 
-        /* Nav sticky */
-        var nav = document.getElementById('nav');
-        window.addEventListener('scroll', function () { nav.classList.toggle('stuck', window.scrollY > 30); });
+            /* Nav sticky */
+            var nav = document.getElementById('nav');
+            window.addEventListener('scroll', function () { nav.classList.toggle('stuck', window.scrollY > 30); });
 
-        /* Hamburger */
-        var ham = document.getElementById('ham');
-        var mob = document.getElementById('mob');
-        ham.addEventListener('click', function () {
-            var isOpen = ham.classList.toggle('on');
-            mob.classList.toggle('open');
-            ham.setAttribute('aria-expanded', isOpen);
-        });
-        document.querySelectorAll('.ml').forEach(function (a) {
-            a.addEventListener('click', function () {
-                ham.classList.remove('on'); mob.classList.remove('open');
-                ham.setAttribute('aria-expanded', 'false');
+            /* Hamburger */
+            var ham = document.getElementById('ham');
+            var mob = document.getElementById('mob');
+            ham.addEventListener('click', function () {
+                var isOpen = ham.classList.toggle('on');
+                mob.classList.toggle('open');
+                ham.setAttribute('aria-expanded', isOpen);
             });
-        });
-
-        /* FAQ */
-        document.querySelectorAll('.faq-q').forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                var item = btn.parentElement;
-                var wasOpen = item.classList.contains('open');
-                document.querySelectorAll('.faq-item').forEach(function (i) {
-                    i.classList.remove('open');
-                    i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+            document.querySelectorAll('.ml').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    ham.classList.remove('on'); mob.classList.remove('open');
+                    ham.setAttribute('aria-expanded', 'false');
                 });
-                if (!wasOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
             });
-        });
 
-        /* Reveal */
-        if ('IntersectionObserver' in window) {
-            var obs = new IntersectionObserver(function (entries) {
-                entries.forEach(function (entry) {
-                    if (entry.isIntersecting) { entry.target.classList.add('v'); obs.unobserve(entry.target); }
+            /* FAQ */
+            document.querySelectorAll('.faq-q').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var item = btn.parentElement;
+                    var wasOpen = item.classList.contains('open');
+                    document.querySelectorAll('.faq-item').forEach(function (i) {
+                        i.classList.remove('open');
+                        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+                    });
+                    if (!wasOpen) { item.classList.add('open'); btn.setAttribute('aria-expanded', 'true'); }
                 });
-            }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-            document.querySelectorAll('.r').forEach(function (el) { obs.observe(el); });
-        } else {
-            document.querySelectorAll('.r').forEach(function (el) { el.classList.add('v'); });
-        }
-
-        /* Sticky mobile CTA */
-        var stk = document.getElementById('stk');
-        var heroEl = document.getElementById('top');
-        var footerEl = document.querySelector('.footer');
-        function checkSticky() {
-            if (window.innerWidth > 920) return;
-            var hb = heroEl.getBoundingClientRect().bottom;
-            var ft = footerEl.getBoundingClientRect().top;
-            stk.classList.toggle('show', hb < 0 && ft > window.innerHeight);
-        }
-        window.addEventListener('scroll', checkSticky); checkSticky();
-
-        /* Smooth scroll */
-        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
-            a.addEventListener('click', function (e) {
-                var href = this.getAttribute('href');
-                if (href === '#') return;
-                e.preventDefault();
-                var target = document.querySelector(href);
-                if (target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
             });
-        });
 
-    })();
+            /* Reveal */
+            if ('IntersectionObserver' in window) {
+                var obs = new IntersectionObserver(function (entries) {
+                    entries.forEach(function (entry) {
+                        if (entry.isIntersecting) { entry.target.classList.add('v'); obs.unobserve(entry.target); }
+                    });
+                }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+                document.querySelectorAll('.r').forEach(function (el) { obs.observe(el); });
+            } else {
+                document.querySelectorAll('.r').forEach(function (el) { el.classList.add('v'); });
+            }
+
+            /* Sticky mobile CTA */
+            var stk = document.getElementById('stk');
+            var heroEl = document.getElementById('top');
+            var footerEl = document.querySelector('.footer');
+            function checkSticky() {
+                if (window.innerWidth > 920) return;
+                var hb = heroEl.getBoundingClientRect().bottom;
+                var ft = footerEl.getBoundingClientRect().top;
+                stk.classList.toggle('show', hb < 0 && ft > window.innerHeight);
+            }
+            window.addEventListener('scroll', checkSticky); checkSticky();
+
+            /* Smooth scroll */
+            document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+                a.addEventListener('click', function (e) {
+                    var href = this.getAttribute('href');
+                    if (href === '#') return;
+                    e.preventDefault();
+                    var target = document.querySelector(href);
+                    if (target) window.scrollTo({ top: target.offsetTop - 80, behavior: 'smooth' });
+                });
+            });
+
+        })();
     </script>
 </body>
+
 </html>
