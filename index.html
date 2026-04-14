@@ -2017,7 +2017,7 @@
         @media (max-width: 920px) {
             .nav-in {
                 height: 84px; /* Plus haut pour un aspect plus premium */
-                padding: 0 24px;
+                padding: 0; /* Supprimé pour maximiser l'espace */
                 display: flex;
                 flex-wrap: nowrap;
                 width: 100%;
@@ -2028,6 +2028,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
+                margin-left: -35px; /* Déplacement agressif pour coller au bord bord */
             }
 
             .logo img {
@@ -2040,6 +2041,7 @@
                 margin-left: auto; /* Ensure it stays right on mobile */
                 display: flex;
                 align-items: center;
+                padding-right: 15px; /* Maintient un petit espace pour le menu à droite */
             }
 
             .nav-mid, .btn-nav.desk {
